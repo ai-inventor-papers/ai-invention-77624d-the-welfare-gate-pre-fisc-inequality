@@ -1,0 +1,299 @@
+\begin{thebibliography}{41}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Acemoglu and Robinson(2006)]{AcemogluRobinson2006}
+Daron Acemoglu and James~A. Robinson.
+\newblock \emph{Economic Origins of Dictatorship and Democracy}.
+\newblock Cambridge University Press, Cambridge, 2006.
+\newblock \doi{10.1017/CBO9780511510809}.
+
+\bibitem[Acemoglu et~al.(2005)Acemoglu, Johnson, Robinson, and
+  Yared]{AcemogluJohnson2005}
+Daron Acemoglu, Simon Johnson, James~A. Robinson, and Pierre Yared.
+\newblock From education to democracy?
+\newblock \emph{American Economic Review}, 95\penalty0 (2):\penalty0 44--49,
+  2005.
+\newblock \doi{10.1257/000282805774669916}.
+
+\bibitem[Acemoglu et~al.(2013)Acemoglu, Egorov, and Sonin]{AcemogluEgorov2013}
+Daron Acemoglu, Georgy Egorov, and Konstantin Sonin.
+\newblock A political theory of populism.
+\newblock \emph{The Quarterly Journal of Economics}, 128\penalty0 (2):\penalty0
+  771--805, 2013.
+\newblock \doi{10.1093/qje/qjs077}.
+
+\bibitem[Acemoglu et~al.(2015)Acemoglu, Naidu, Restrepo, and
+  Robinson]{AcemogluNaidu2015}
+Daron Acemoglu, Suresh Naidu, Pascual Restrepo, and James~A. Robinson.
+\newblock Democracy, redistribution, and inequality.
+\newblock In Anthony~B. Atkinson and Francois Bourguignon, editors,
+  \emph{Handbook of Income Distribution}, volume~2, chapter~22, pages
+  1885--1966. Elsevier, Amsterdam, 2015.
+\newblock \doi{10.1016/B978-0-444-59429-7.00022-4}.
+
+\bibitem[Ansell(2010)]{Ansell2010}
+Ben~W. Ansell.
+\newblock \emph{From the Ballot to the Blackboard: The Redistributive Political
+  Economy of Education}.
+\newblock Cambridge University Press, Cambridge, 2010.
+\newblock \doi{10.1017/CBO9780511730108}.
+
+\bibitem[Ansell and Samuels(2014)]{AnsellSamuels2014}
+Ben~W. Ansell and David~J. Samuels.
+\newblock \emph{Inequality and Democratization: An Elite-Competition Approach}.
+\newblock Cambridge University Press, New York, 2014.
+\newblock \doi{10.1017/CBO9780511843686}.
+
+\bibitem[Benczes and Orzechowska-Wac{\l}awska(2024)]{Benczes2024}
+Istv{\'a}n Benczes and Joanna Orzechowska-Wac{\l}awska.
+\newblock Governing the economy under populist rule: The cases of hungary and
+  poland.
+\newblock \emph{Problems of Post-Communism}, 71\penalty0 (4):\penalty0
+  341--355, 2024.
+\newblock \doi{10.1080/10758216.2023.2301085}.
+
+\bibitem[Bermeo(2016)]{Bermeo2016}
+Nancy Bermeo.
+\newblock On democratic backsliding.
+\newblock \emph{Journal of Democracy}, 27\penalty0 (1):\penalty0 5--19, 2016.
+\newblock \doi{10.1353/jod.2016.0012}.
+
+\bibitem[Boix(2003)]{Boix2003}
+Carles Boix.
+\newblock \emph{Democracy and Redistribution}.
+\newblock Cambridge University Press, Cambridge, 2003.
+\newblock \doi{10.1017/CBO9780511804960}.
+
+\bibitem[Boix et~al.(2013)Boix, Miller, and Rosato]{BoixMiller2013}
+Carles Boix, Michael Miller, and Sebastian Rosato.
+\newblock A complete data set of political regimes, 1800--2007.
+\newblock \emph{Comparative Political Studies}, 46\penalty0 (12):\penalty0
+  1523--1554, 2013.
+\newblock \doi{10.1177/0010414012463905}.
+
+\bibitem[Callaway and Sant'Anna(2021)]{Callaway2021}
+Brantly Callaway and Pedro H.~C. Sant'Anna.
+\newblock Difference-in-differences with multiple time periods.
+\newblock \emph{Journal of Econometrics}, 225\penalty0 (2):\penalty0 200--230,
+  2021.
+\newblock \doi{10.1016/j.jeconom.2020.12.001}.
+
+\bibitem[Campante and Chor(2012)]{CampanteChor2012}
+Filipe~R. Campante and Davin Chor.
+\newblock Why was the arab world poised for revolution? schooling, economic
+  opportunities, and the arab spring.
+\newblock \emph{Journal of Economic Perspectives}, 26\penalty0 (2):\penalty0
+  167--188, 2012.
+\newblock \doi{10.1257/jep.26.2.167}.
+
+\bibitem[Coppedge et~al.(2024)Coppedge, Gerring, Knutsen, Lindberg, Teorell,
+  Marquardt, Medzihorsky, Pemstein, Alizada, Gastaldi, Hindle, von R{\"o}mer,
+  and Wilson]{Coppedge2024}
+Michael Coppedge, John Gerring, Carl~Henrik Knutsen, Staffan~I. Lindberg, Jan
+  Teorell, Kyle~L. Marquardt, Juraj Medzihorsky, Daniel Pemstein, Nazifa
+  Alizada, Lisa Gastaldi, Garry Hindle, Johannes von R{\"o}mer, and Steven~L.
+  Wilson.
+\newblock V-dem [country-year/country-date] dataset v14.
+\newblock Varieties of Democracy (V-Dem) Project, 2024.
+\newblock URL \url{https://v-dem.net}.
+
+\bibitem[Ennser-Jedenastik(2018)]{EnnserJedenastik2018}
+Laurenz Ennser-Jedenastik.
+\newblock Welfare chauvinism in populist radical right platforms: The role of
+  redistributive justice principles.
+\newblock \emph{Social Policy \& Administration}, 52\penalty0 (1):\penalty0
+  293--314, 2018.
+\newblock \doi{10.1111/spol.12325}.
+
+\bibitem[Esping-Andersen(1990)]{EspingAndersen1990}
+G{\o}sta Esping-Andersen.
+\newblock \emph{The Three Worlds of Welfare Capitalism}.
+\newblock Princeton University Press, Princeton, NJ, 1990.
+
+\bibitem[Gethin et~al.(2022)Gethin, Martinez-Toledano, and Piketty]{Gethin2022}
+Amory Gethin, Clara Martinez-Toledano, and Thomas Piketty.
+\newblock Brahmin left versus merchant right: Changing political cleavages in
+  21 western democracies, 1948--2020.
+\newblock \emph{The Quarterly Journal of Economics}, 137\penalty0 (1):\penalty0
+  1--48, 2022.
+\newblock \doi{10.1093/qje/qjab036}.
+
+\bibitem[Goodman-Bacon(2021)]{GoodmanBacon2021}
+Andrew Goodman-Bacon.
+\newblock Difference-in-differences with variation in treatment timing:
+  History, theory, and application.
+\newblock \emph{Journal of Econometrics}, 225\penalty0 (2):\penalty0 254--277,
+  2021.
+\newblock \doi{10.1016/j.jeconom.2021.03.014}.
+
+\bibitem[Grumbach(2023)]{Grumbach2023}
+Jacob~M. Grumbach.
+\newblock Laboratories of democratic backsliding.
+\newblock \emph{American Political Science Review}, 117\penalty0 (3):\penalty0
+  967--984, 2023.
+\newblock \doi{10.1017/S0003055422000934}.
+
+\bibitem[Haggard and Kaufman(2012)]{HaggardKaufman2012}
+Stephan Haggard and Robert~R. Kaufman.
+\newblock Inequality and regime change: Democratic transitions and the
+  stability of democratic rule.
+\newblock \emph{American Political Science Review}, 106\penalty0 (3):\penalty0
+  495--516, 2012.
+\newblock \doi{10.1017/S0003055412000287}.
+
+\bibitem[Haggard and Kaufman(2016)]{HaggardKaufman2016}
+Stephan Haggard and Robert~R. Kaufman.
+\newblock \emph{Dictators and Democrats: Masses, Elites, and Regime Change}.
+\newblock Princeton University Press, Princeton, NJ, 2016.
+
+\bibitem[Haggard and Kaufman(2021)]{HaggardKaufman2021}
+Stephan Haggard and Robert~R. Kaufman.
+\newblock \emph{Backsliding: Democratic Regress in the Contemporary World}.
+\newblock Cambridge University Press, Cambridge, 2021.
+\newblock \doi{10.1017/9781108957809}.
+
+\bibitem[Houle(2009)]{Houle2009}
+Christian Houle.
+\newblock Inequality and democracy: Why inequality harms consolidation but does
+  not affect democratization.
+\newblock \emph{World Politics}, 61\penalty0 (4):\penalty0 589--622, 2009.
+\newblock \doi{10.1017/S0043887109990074}.
+
+\bibitem[Huber and Stephens(2001)]{HuberStephens2001}
+Evelyne Huber and John~D. Stephens.
+\newblock \emph{Development and Crisis of the Welfare State: Parties and
+  Policies in Global Markets}.
+\newblock University of Chicago Press, Chicago, 2001.
+\newblock \doi{10.7208/chicago/9780226356495.001.0001}.
+
+\bibitem[Huber and Stephens(2012)]{HuberStephens2012}
+Evelyne Huber and John~D. Stephens.
+\newblock \emph{Democracy and the Left: Social Policy and Inequality in Latin
+  America}.
+\newblock University of Chicago Press, Chicago, 2012.
+\newblock \doi{10.7208/chicago/9780226356556.001.0001}.
+
+\bibitem[Korpi and Palme(1998)]{KorpiPalme1998}
+Walter Korpi and Joakim Palme.
+\newblock The paradox of redistribution and strategies of equality: Welfare
+  state institutions, inequality, and poverty in the western countries.
+\newblock \emph{American Sociological Review}, 63\penalty0 (5):\penalty0
+  661--687, 1998.
+\newblock \doi{10.2307/2657333}.
+
+\bibitem[Lendvai-Bainton and Szelewa(2021)]{LendvaiBainton2021}
+No{\'e}mi Lendvai-Bainton and Dorota Szelewa.
+\newblock Governing new authoritarianism: Populism, nationalism and radical
+  welfare reforms in hungary and poland.
+\newblock \emph{Social Policy \& Administration}, 55\penalty0 (4):\penalty0
+  559--572, 2021.
+\newblock \doi{10.1111/spol.12642}.
+
+\bibitem[Levitsky and Ziblatt(2018)]{LevitskyZiblatt2018}
+Steven Levitsky and Daniel Ziblatt.
+\newblock \emph{How Democracies Die}.
+\newblock Crown, New York, 2018.
+
+\bibitem[L{\"u}hrmann(2021)]{Luhrmann2021}
+Anna L{\"u}hrmann.
+\newblock Disrupting the autocratization sequence: Towards democratic
+  resilience.
+\newblock \emph{Democratization}, 28\penalty0 (5):\penalty0 1017--1039, 2021.
+\newblock \doi{10.1080/13510347.2021.1928080}.
+
+\bibitem[L{\"u}hrmann and Lindberg(2019)]{LuhrmannLindberg2019}
+Anna L{\"u}hrmann and Staffan~I. Lindberg.
+\newblock A third wave of autocratization is here: What is new about it?
+\newblock \emph{Democratization}, 26\penalty0 (7):\penalty0 1095--1113, 2019.
+\newblock \doi{10.1080/13510347.2019.1582029}.
+
+\bibitem[L{\"u}hrmann et~al.(2018)L{\"u}hrmann, Tannenberg, and
+  Lindberg]{LuhrmannTannenberg2018}
+Anna L{\"u}hrmann, Marcus Tannenberg, and Staffan~I. Lindberg.
+\newblock Regimes of the world (row): Opening new avenues for the comparative
+  study of political regimes.
+\newblock \emph{Politics and Governance}, 6\penalty0 (1):\penalty0 60--77,
+  2018.
+\newblock \doi{10.17645/pag.v6i1.1214}.
+
+\bibitem[{Our World in Data}(2025)]{OurWorldInData2025}
+{Our World in Data}.
+\newblock Our world in data, 2025.
+\newblock URL \url{https://ourworldindata.org}.
+\newblock Online database.
+
+\bibitem[Pierson(1993)]{Pierson1993}
+Paul Pierson.
+\newblock When effect becomes cause: Policy feedback and political change.
+\newblock \emph{World Politics}, 45\penalty0 (4):\penalty0 595--628, 1993.
+\newblock \doi{10.2307/2950710}.
+
+\bibitem[Rau and Stokes(2025)]{RauStokes2025}
+Eli~G. Rau and Susan Stokes.
+\newblock Income inequality and the erosion of democracy in the twenty-first
+  century.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 122\penalty0
+  (1):\penalty0 e2422543121, 2025.
+\newblock \doi{10.1073/pnas.2422543121}.
+
+\bibitem[Rothstein and Uslaner(2005)]{RothsteinUslaner2005}
+Bo~Rothstein and Eric~M. Uslaner.
+\newblock All for all: Equality, corruption, and social trust.
+\newblock \emph{World Politics}, 58\penalty0 (1):\penalty0 41--72, 2005.
+\newblock \doi{10.1353/wp.2006.0022}.
+
+\bibitem[Soss and Schram(2007)]{SossSchram2007}
+Joe Soss and Sanford~F. Schram.
+\newblock A public transformed? welfare reform as policy feedback.
+\newblock \emph{American Political Science Review}, 101\penalty0 (1):\penalty0
+  111--127, 2007.
+\newblock \doi{10.1017/S0003055407070049}.
+
+\bibitem[Sun and Abraham(2021)]{SunAbraham2021}
+Liyang Sun and Sarah Abraham.
+\newblock Estimating dynamic treatment effects in event studies with
+  heterogeneous treatment effects.
+\newblock \emph{Journal of Econometrics}, 225\penalty0 (2):\penalty0 175--199,
+  2021.
+\newblock \doi{10.1016/j.jeconom.2020.09.006}.
+
+\bibitem[Svolik(2015)]{Svolik2015}
+Milan~W. Svolik.
+\newblock Which democracies will last? coups, incumbent takeovers, and the
+  dynamic of democratic consolidation.
+\newblock \emph{British Journal of Political Science}, 45\penalty0
+  (4):\penalty0 715--738, 2015.
+\newblock \doi{10.1017/S0007123413000550}.
+
+\bibitem[Svolik(2019)]{Svolik2019}
+Milan~W. Svolik.
+\newblock Polarization versus democracy.
+\newblock \emph{Journal of Democracy}, 30\penalty0 (3):\penalty0 20--32, 2019.
+\newblock \doi{10.1353/jod.2019.0039}.
+
+\bibitem[Szikra and {\"O}ktem(2023)]{SzikraOktem2023}
+Dorottya Szikra and Kerem~Gabriel {\"O}ktem.
+\newblock An illiberal welfare state emerging? welfare efforts and trajectories
+  under democratic backsliding in hungary and turkey.
+\newblock \emph{Journal of European Social Policy}, 33\penalty0 (2):\penalty0
+  201--215, 2023.
+\newblock \doi{10.1177/09589287221141365}.
+
+\bibitem[Vanhuysse(2006)]{Vanhuysse2006}
+Pieter Vanhuysse.
+\newblock \emph{Divide and Pacify: Strategic Social Policies and Political
+  Protests in Post-Communist Democracies}.
+\newblock Central European University Press, Budapest, 2006.
+
+\bibitem[Waldner and Lust(2018)]{WaldnerLust2018}
+David Waldner and Ellen Lust.
+\newblock Unwelcome change: Coming to terms with democratic backsliding.
+\newblock \emph{Annual Review of Political Science}, 21\penalty0 (1):\penalty0
+  93--113, 2018.
+\newblock \doi{10.1146/annurev-polisci-050517-114628}.
+
+\end{thebibliography}

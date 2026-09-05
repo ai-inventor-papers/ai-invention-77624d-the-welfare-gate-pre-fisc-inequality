@@ -1,0 +1,1141 @@
+
+========== PAGE 1 ==========
+The Welfare Gate: Pre-Fisc Inequality, Universal Public Services,
+and Democratic Resilience in Post-1990 Democratizers
+A pre-registered research design. No model has been estimated; the estimates do not exist yet. The
+protocol, the xed country roster, the coverage matrix, and the power analysis are deposited in a
+timestamped registry (OSF; the registration ID and deposit date are xed at the moment of deposit)
+before any estimation. This paper states the theory, the data infrastructure, the six pre-committed
+estimation designs, and the decision rules against which results will be judged. It is written for
+venues that publish registered designs and pre-analysis plans; we do not report estimates because
+none are in hand.
+Abstract
+The literature on democratic erosion in the twenty-rst century holds two contradictory
+accounts. The materialist account nds that income inequality is among the strongest predictors
+of democratic decline in a global sample of uninterrupted democracies [Rau and Stokes, 2025].
+The coalitional account argues, from close case comparison, that economic grievances did not
+systematically separate post-1990 backsliders from survivors [Haggard and Kaufman, 2021]. This
+paper argues that the contradiction is unresolved for a structural reason: neither account tests
+the conditioning structure, and the statistical account's treatment is entangled with the very
+institution the gate hypothesis implicates. Disposable-income inequality is post-sc, and scal
+systems that compress it are larger where welfare states are larger, so a gate estimated on the
+disposable Gini cannot separate institutional transmission from arithmetic ltering. We register
+a design that corrects both problems: the treatment is pre-sc, the World Inequality Database
+pre-tax top-10 percent income share, with the market-income Gini secondary. The scal lter
+is measured directly as the market-minus-disposable Gini gap, converting the entanglement
+into the test of the stabilization mechanism. Among post-1990 democratizers whose transition
+began between 1989 and 1998, the hypothesis is that market-inequality surges erode the V-
+Dem Liberal Democracy Index three to ve years later only where universal public health
+and education services built in the rst democratic decade are thin. The gate is identied o
+deviations from welfare-specic trends, with estimators built for dierential treatment timing, a
+xed roster with a documented coverage matrix, and a simulation-based minimum-detectable-
+eect analysis. Conrmation and disconrmation criteria are xed ex ante, with a primary-
+specication signicance rule and a ve-of-seven robustness threshold. The design is built so
+the test can adjudicate between unconditional materialist, purely coalitional, and institutionally
+gated accounts.
+1
+Introduction
+Since the late twentieth century the main threat to democratic regimes has changed character. The
+military coup has given way to the power-aggrandizing elected executive: presidents and prime
+ministers who capture courts, harass the press, and de-legitimize elections [Rau and Stokes, 2025,
+Waldner and Lust, 2018, Bermeo, 2016, Levitsky and Ziblatt, 2018]. Erosion is now understood as a
+1
+
+========== PAGE 2 ==========
+graded, incremental process inside formally democratic regimes, and a third wave of autocratization
+is dated to the late 2000s [Lührmann and Lindberg, 2019]. The process descends from national
+executives to state governments [Grumbach, 2023]. The question that dominated twentieth-century
+comparative politics, what kills democracies, has been replaced by a harder one: how much demo-
+cratic quality does a regime lose, and which democracies lose almost none?
+Two answers compete. The materialist account points to income inequality. In a cross-national
+sample of democracies that remained uninterrupted over 19952020, Rau and Stokes count 23 spells
+of backsliding in 22 countries, lasting nine years on average, and nd that the Gini coecient is
+among the strongest predictors of erosion onset [Rau and Stokes, 2025]. The result extends an older
+one: in the coup era, inequality harmed democratic consolidation even where it did not block de-
+mocratization [Houle, 2009], in line with the distributional-conict tradition in which redistribution
+is the pivot of regime conict [Acemoglu and Robinson, 2006, Boix, 2003, Ansell and Samuels, 2014].
+The coalitional account pushes back. From close comparison of the post-1990 wave, Haggard and
+Kaufman conclude that economic grievances and rising inequality did not systematically separate
+backsliders from survivors; polarization and elite coalitional choices did [Haggard and Kaufman,
+2021, Svolik, 2019]. One literature says inequality is a central driver of erosion. Another says the
+economic story fails exactly in the cases that matter.
+Both claims cannot hold in the unconditional form in which they are stated. The dispute has
+not been resolved because neither side runs the design that could resolve it. The statistical account
+estimates a main eect: its specications contain no welfare variables and no moderators, and its
+sample of uninterrupted democracies excludes precisely the young democratizers that fell below
+the democracy threshold while eroding [Rau and Stokes, 2025]. The case-based account compares
+backsliders with survivors but never formalizes the interaction structure a conditional claim requires
+[Haggard and Kaufman, 2021]. What is missing in both is the institutional environment, and in the
+statistical account there is a deeper problem. Rau and Stokes measure inequality with disposable-
+income Ginis and with World Inequality Database shares that are pre-tax [Rau and Stokes, 2025].
+Disposable income is post-sc.
+In any country the scal system compresses market inequality,
+and the compression is larger where public services and transfers are larger. A specication that
+uses the disposable Gini as the treatment, with no welfare variables, cannot separate inequality
+erodes democracy from scal systems that compress inequality also protect democracy. The rst
+mechanism of any welfare-gate account, automatic stabilization, is built into the treatment of the
+very paper that establishes the unconditional result.
+This paper registers a design that corrects both problems and states the gate hypothesis plainly.
+Among post-1990 democratizers whose transition to electoral democracy began between 1989 and
+1998, a rise in market-income inequality, measured pre-sc, erodes liberal-democratic quality three
+to ve years later only where welfare institutions built in the rst democratic decade are thin. In
+countries whose rst democratic decade universalized public health and education into services the
+broad middle class actually uses, market-inequality surges do not transmit into declines in the Liberal
+Democracy Index; where public services stayed thin, the same surges predict graded erosion. The
+gate decomposes into two paths, and the design measures them separately. Automatic stabilization
+is the scal lter: the market-minus-disposable Gini gap, the share of any market shock that the
+scal system absorbs before it reaches the distribution citizens experience. Behavioral transmission
+is the residual link from the market shock citizens do experience to democratic quality, gated by
+constituency formation, by which the middle class holds a material stake in the public institutions
+erosion would capture [Pierson, 1993, Soss and Schram, 2007, Rothstein and Uslaner, 2005], and
+by credible pre-commitment, by which universal automatic programs block the elite-retrenchment
+and populist-promise equilibrium of Acemoglu, Egorov, and Sonin [Acemoglu et al., 2013]. The
+gate is the universal service state, not welfare eort in general: pension-heavy total social spending,
+2
+
+========== PAGE 3 ==========
+targeted cash, and chauvinist transfers do not gate, and generosity purchased later by incumbents
+is part of the erosion playbook, not a substitute [Szikra and Öktem, 2023, Lendvai-Bainton and
+Szelewa, 2021, Vanhuysse, 2006, Benczes and Orzechowska-Wacªawska, 2024, Ennser-Jedenastik,
+2018].
+Why has this design not been run before? Three literatures hold its parts, and none has assem-
+bled them. The welfare-state literature established the concepts the gate needs: decommodication,
+by which welfare institutions sever living standards from labor-market position [Esping-Andersen,
+1990]; the paradox of redistribution, by which universal programs redistribute more than targeted
+ones [Korpi and Palme, 1998]; and policy feedback, by which programs create their own defenders
+[Pierson, 1993, Soss and Schram, 2007]. The democratic-dividend program established that de-
+mocratization raises tax revenues and schooling, and found no robust average eect on inequality,
+with imprecise estimates on net and gross Gini coecients and suggestive heterogeneity by land
+inequality and structural transformation [Acemoglu et al., 2015]. The erosion literature measures
+neither welfare institutions nor the post-1990 cohort's conditional structure [Rau and Stokes, 2025,
+Haggard and Kaufman, 2021]. The closest existing statements of the gate's logic are the nding
+that young democracies are distinctively vulnerable to incumbent takeover rather than coups [Svo-
+lik, 2015], the argument that welfare states underwrite democratic legitimacy and consolidation in
+Latin America [Huber and Stephens, 2001, 2012], and the universalism-to-trust microfoundation
+of institutional legitimacy [Rothstein and Uslaner, 2005]. Each stops short of the inequality-shock
+interaction structure this design estimates.
+The status is stated plainly because it matters for how the paper is read. No model has been
+estimated. This is a pre-registered research design: the roster, the coverage matrix, the six esti-
+mation designs, and the decision rules in Section 6 are xed and deposited before estimation. We
+present the theory, the data infrastructure, and the protocol; a companion paper will report esti-
+mates against the Section 6 criteria. The design is restricted to public Our World in Data (OWID)
+panels [Our World in Data, 2025], with one disclosed non-OWID input, the Boix-Miller-Rosato
+cross-check for transition dating [Boix et al., 2013]; every variable is downloadable by any reader,
+and the full analysis is reproducible without proprietary data.
+Summary of contributions. (i) We reconcile the materialist and coalitional accounts of post-
+1990 erosion by identifying the institutional condition under which each holds: inequality erodes
+democracy where welfare institutions are thin, and the coalitional story dominates where they are
+thick. (ii) We correct the measurement entanglement that has biased the materialist account toward
+a spurious unconditional eect: the treatment is pre-sc, and the scal lter is measured directly as
+the market-minus-disposable Gini gap, so the stabilization mechanism is tested rather than assumed.
+(iii) We condition the inequality leg of the democratic dividend on welfare institutions [Acemoglu
+et al., 2015], state the dividend on top-income shares over a xed post-transition window, and link
+its size to regime resilience two decades later. (iv) We identify the gate o deviations from welfare-
+specic trends, with estimators designed for dierential treatment timing [Callaway and Sant'Anna,
+2021, Sun and Abraham, 2021], exogeneity probes on the pre-determined welfare measure, and a
+xed roster with a documented coverage matrix, so the conrmation criteria are calibrated to the
+power the sample can actually deliver.
+2
+The Two Accounts and the Missing Interaction
+2.1
+The materialist account
+Rau and Stokes identify erosion spells using expert-survey measures of decline in vertical and hor-
+izontal accountability, coded from V-Dem information [Rau and Stokes, 2025]. Between 1995 and
+3
+
+========== PAGE 4 ==========
+2020 they count 23 spells of backsliding in 22 countries, lasting nine years on average. The unit
+of analysis is the country-year, and inclusion requires a country to have been an uninterrupted
+democracy over the period under the Miller-Boix-Rosato classication; the main analyses cover 92
+countries, with Venezuela the single admitted case that eroded into autocracy [Rau and Stokes,
+2025, Boix et al., 2013]. The leading predictor is the Gini coecient, and the calibration is stark.
+For Sweden, whose Gini of 26.4 in 2017 makes it more equal than 87 percent of democracies, the
+predicted annual risk of erosion is 4 percent. For the United States, whose Gini of 38.4 exceeds
+that of 60 percent of democracies, the predicted risk is 8.4 percent. South Africa, the most unequal
+democracy in the sample, has a predicted risk of 31 percent [Rau and Stokes, 2025]. The result
+extends to the structure of inequality: the larger the income and wealth shares of the top 1 and top
+10 percent, the more likely democracy is to erode, and the larger the bottom-half share, the less
+likely [Rau and Stokes, 2025]. The association survives a wide battery of alternatives: four Gini
+sources, wealth inequality, country-year and country-election-year units, rare-events estimation, and
+region and country xed eects [Rau and Stokes, 2025].
+Two details of that paper matter for this one. First, the top-end income and wealth shares come
+from the World Inequality Database, and those shares are pre-tax [Rau and Stokes, 2025]. The
+agship result's structural measures are already market-income in concept, while its Gini measures
+are post-sc, and the design estimates a single main eect pooling both. Second, Rau and Stokes
+interpret the channel through polarization: their mechanism analysis uses a measure of aective
+polarization, with V-Dem's societal polarization as the robustness alternative [Rau and Stokes,
+2025, Svolik, 2019]. The gate account does not contest that polarization is the proximate channel;
+it contests the claim that polarization is a sucient channel, because the polarization-to-erosion
+link is exactly what universal service institutions are hypothesized to interrupt. We return to this
+in Section 3 and pre-commit the dierentiating reading in Section 6.
+The account's lineage matters for what it does not test. Houle's result, that inequality harms
+democratic consolidation but not democratization, was estimated in a global sample across the
+coup-driven era with discrete survival outcomes [Houle, 2009].
+Haggard and Kaufman's earlier
+statistical work likewise found inequality among the correlates of democratic instability [Haggard
+and Kaufman, 2012]. The theoretical tradition behind both is the distributional-conict model of
+regimes, in which democratization is a commitment device that elites accept when the revolution
+constraint binds, and the redistributive threat it poses is what makes elites resist [Acemoglu and
+Robinson, 2006, Boix, 2003, Ansell and Samuels, 2014]. In that tradition inequality is the central
+cause, and welfare policy is a consequence of democracy, not a condition on its survival.
+2.2
+The coalitional account
+Haggard and Kaufman's comparative work on the post-1990 wave reaches a dierent conclusion
+[Haggard and Kaufman, 2021, 2016]. Backsliders such as Hungary, Poland, Turkey, and Venezuela,
+and survivors such as the Baltic states, Slovakia, South Korea, and Chile, do not separate cleanly
+on economic grievances. Some backsliders grew rapidly and reduced poverty; some survivors suf-
+fered deep crises. What distinguishes the two groups, in their reading, is the conguration of elites
+and parties: whether the political system produced a dominant coalition with incentives to dis-
+mantle constraints, and whether polarization gave that coalition an electorally sustainable base
+[Haggard and Kaufman, 2021, Svolik, 2019]. Their empirical strategy is comparative case analysis,
+and they are explicit that the economic variables that dominate the statistical literature do not carry
+the explanatory weight in the cases [Haggard and Kaufman, 2021]. Bermeo's conceptual history
+and Waldner and Lust's synthesis stress steady, incremental, often stealthy executive aggrandize-
+ment as a political choice rather than an economic reex [Waldner and Lust, 2018, Bermeo, 2016].
+4
+
+========== PAGE 5 ==========
+Lührmann's account of autocratization as a sequence locates the disruptive potential in institutional
+resilience, the general phenomenon of which the welfare state is, in our account, a specic instance
+[Lührmann, 2021].
+2.3
+Prior conditioning results
+Three bodies of work already touch the conditional structure the gate needs, and each stops short
+of it. We state the dierences now because the gate's contribution is dened against them.
+Young democracies are the population at risk. Svolik shows that young democracies are
+vulnerable to incumbent takeovers rather than coups, and that consolidation is slow: most demo-
+cratic failures in the postwar era are executive power grabs in countries that have not yet experienced
+successful alternations in power [Svolik, 2015]. This denes the population this paper studies, the
+post-1990 cohort, and the outcome class, executive-aggrandizing erosion. Svolik conditions the risk
+on the history of electoral contestation, not on welfare institutions, and his framework does not
+engage the inequality channel at all. The gate adds exactly that: within the young-democracy pop-
+ulation, the inequality-erosion link is conditional on the service state built in the rst democratic
+decade.
+Welfare states underwrite democratic legitimacy and consolidation.
+Huber and
+Stephens argue, from Latin America and from the advanced democracies, that welfare states
+provide legitimacy to democratic institutions and that their development and crisis track the fate
+of democracy [Huber and Stephens, 2001, 2012].
+This is the closest existing statement of the
+gate's constituency logic. It diers from the gate in three ways: it is about average legitimacy
+rather than the eect of inequality shocks; it does not test an interaction between welfare structure
+and inequality movements on democratic trajectories; and its consolidation accounts concern
+longer-lived democracies, not the post-1990 cohort with its inherited service legacies.
+Universalism produces the legitimacy that protects institutions. Rothstein and Uslaner
+establish the microfoundation: universal welfare institutions generate equality, equality generates
+generalized trust, and trust generates support for institutions [Rothstein and Uslaner, 2005]. The
+gate's constituency-formation mechanism is this argument applied at the margin of an inequality
+shock: universal services give the middle class a material stake in the public institutions that erosion
+would capture, so the institutions themselves acquire defenders [Pierson, 1993, Soss and Schram,
+2007, Rothstein and Uslaner, 2005]. The gate claims eect modication, a conditional claim none
+of these works tests.
+2.4
+The missing interaction and the dividend's null leg
+Neither leading account tests the conditioning structure. The statistical account has no interaction
+terms: its specications include no welfare variables, so it cannot observe whether the inequality
+coecient is carried by the thin-welfare democracies in its sample, and its sample restriction excludes
+exactly the case population that matters most for adjudication, the young democratizers that fell
+below the democracy threshold while eroding [Rau and Stokes, 2025]. The case-based account has
+an interaction design in substance, backsliders versus survivors across institutional environments,
+but no welfare measure is coded systematically and no statistical claim about eect modication is
+made [Haggard and Kaufman, 2021]. The two accounts are not in fact rivals at the level of their
+designs. They are main-eect and case-descriptive enterprises, each silent on the dimension that
+would separate them.
+A third literature makes the conditional structure concrete, and its own null marks the place
+where the gate should sit. The democratic-dividend program established that democratization has
+5
+
+========== PAGE 6 ==========
+a robust eect on tax revenues, about a 16 percent long-run increase in the tax-to-GDP ratio
+in the preferred specication, and on secondary schooling and structural transformation, but no
+robust average eect on inequality [Acemoglu et al., 2015]. The chapter's inequality analysis runs
+net and gross Gini coecients and top- and bottom-income shares relative to the middle; some
+specications show negative eects on inequality, especially on the gross Gini, but the estimates
+carry large standard errors and are not stable, and the heterogeneity it reports, by land inequality,
+structural transformation, and the top-bottom share structure, is suggestive rather than robust
+[Acemoglu et al., 2015]. We cite the chapter for what it reports: imprecise average estimates, not
+a robust top-share decline. The eld fact to explain is therefore not why inequality fails to fall on
+average, but under what conditions it does fall and whether that condition also gates erosion. The
+gate hypothesis supplies one candidate condition, welfare institutions, and the design in Section 5
+makes the dividend conditional in exactly the way the chapter's own conclusion invites: it calls for
+a systematic investigation of the conditions under which democracy reduces inequality [Acemoglu
+et al., 2015].
+The outcome-side literature sharpens the direction of the test. Szikra and Öktem document
+how welfare states are transformed under democratic backsliding in Hungary and Turkey, converting
+universal or semi-universal systems into instruments of the illiberal project [Szikra and Öktem, 2023].
+Lendvai-Bainton and Szelewa trace the same conversion in Hungary and Poland's radical welfare
+reforms [Lendvai-Bainton and Szelewa, 2021]. Vanhuysse reads early post-communist social policy
+as strategic demobilization of protest [Vanhuysse, 2006].
+Benczes and Orzechowska-Wacªawska
+document how populist governments used economic policy, including family allowances and tax
+favors, to consolidate their coalitions [Benczes and Orzechowska-Wacªawska, 2024], and Ennser-
+Jedenastik shows that welfare chauvinism is a standard plank of populist radical-right platforms
+[Ennser-Jedenastik, 2018]. These works study welfare as an outcome of backsliding. This paper tests
+the opposite direction, whether welfare structure measured before erosion protects, with lead-lag
+tests that separate the two directions empirically.
+The design gap is now precise. What the inequality-democracy literature has never done is
+to estimate the eect of a market-income inequality shock on democratic quality as a function
+of welfare institutions that preceded the shock, with a treatment that is not itself compressed by
+those institutions. Section 3 states that hypothesis; Section 4 builds the data; Section 5 xes the
+estimation; Section 6 xes the decision rules.
+3
+Theory and Hypotheses
+3.1
+The gate and its two paths
+The gate claim is a claim about eect modication, and the entanglement problem reviewed in
+Section 2 forces the claim to be stated on the right treatment. Let mit be market (pre-sc) inequality
+in country i and year t, let dit be disposable (post-sc) inequality, and dene the scal lter as the
+gap git = mit −dit.
+The gap is the share of market inequality that the scal system removes
+before the distribution reaches citizens. It is not a nuisance: it is the rst mechanism of the gate,
+automatic stabilization, made visible. A market shock of size ∆m produces a disposable shock of
+size ∆d = (1 −ϕ(W))∆m, where ϕ(W) is the lter, increasing in the scale and progressivity of the
+welfare state W.
+The total eect of a market shock on liberal-democratic quality decomposes into two terms:
+6
+
+========== PAGE 7 ==========
+dLibDem
+dm
+= ∂LibDem
+∂d
+1 −ϕ(W)
+
+|
+{z
+}
+scal ltering
++
+∂LibDem
+∂m
+ ¯d
+|
+{z
+}
+behavioral transmission
+,
+where the rst term is arithmetic: it operates even if no citizen changes any behavior, because
+less of the shock reaches the distribution politics responds to. The second term is the behavioral
+residue: the eect of the market shock on democratic quality holding the disposable path xed,
+gated by constituency formation and credible pre-commitment. A research design that treats d as
+the treatment and W as the moderator conates the two terms. A design that treats m as the
+treatment and measures g directly separates them. This paper registers the second design. Under
+the arithmetic-only account, the residual market eect is homogeneous in W once g is controlled,
+and the gate interaction disappears when the gap enters the specication. Under the behavioral
+account, the interaction survives gap control. Section 6 xes which of these readings each pattern
+of results supports.
+A simple sketch disciplines the functional form. Two periods. In period 0, the rst democratic
+decade, society operates a universal service state of size w: services that a share u(w) of households
+use, with u′ > 0 and u′′ < 0. In period 1, a market shock raises m, and a populist incumbent oers
+erosion: erosion delivers a private benet B to the executive and captures the public services, worth
+λw to each user household. Household h supports erosion if its grievance gh(d) + vh exceeds its
+stake, where d = (1 −ϕ(w))m, grievance is increasing and convex in experienced inequality (g′ > 0,
+g′′ > 0), and vh is the fear of elite capture in the sense of Acemoglu, Egorov, and Sonin, shifted up
+where inequality is high [Acemoglu et al., 2013]. Erosion proceeds if supporters cross a threshold.
+The marginal eect of the market shock on the erosion hazard is β(w) = γ(1 −ϕ(w)) −δu′(w) −
+κA(w), where γ is the grievance channel, δu′(w) is the constituency channel, and κA(w) is the pre-
+commitment channel, with A(w) indexing program automaticity. With ϕ convex and u concave,
+β′(w) < 0 and β′′(w) > 0: the gate exists, and protection is diminishing, so the marginal-eect curve
+is convex and threshold-like rather than linear. The sketch is a heuristic, not a structural model;
+its role is to discipline the functional forms reported in Section 6. We pre-commit to estimating
+the interaction linearly and with a quadratic term, and to plotting the inequality marginal eect at
+welfare-distribution percentiles so a threshold shape is visible if it is there.
+3.2
+Three mechanisms and their discriminating implications
+Automatic stabilization. Universal public services sever household welfare from labor-market
+position. Public health care keeps medical costs o household budgets when earnings fall; public
+education keeps the next cohort's human capital accumulation independent of parental income
+shocks. This is decommodication applied to the post-1990 wave [Esping-Andersen, 1990], and its
+operational measure is the one the entanglement problem already produced: the market-minus-
+disposable Gini gap. The mechanism is direct, so its discriminating implication is direct. If the
+gate interaction is fully explained by the gap, that is, if including the gap and its interaction drives
+the residual inequality-by-welfare interaction to zero, stabilization is the entire mechanism. If the
+interaction survives gap control, a behavioral residue exists and must be attributed to the next two
+mechanisms.
+Constituency formation.
+Programs create their own defenders [Pierson, 1993, Soss and
+Schram, 2007].
+When the broad middle class uses public health and public education daily, it
+holds a material stake in those institutions: their quality, their budgets, their autonomy from
+the executive. Erosion threatens exactly that. An executive who captures the health ministry or
+the school system captures a service a household depends on, and a middle class that perceives
+7
+
+========== PAGE 8 ==========
+the capture as a loss of a valued public asset has a concrete, self-interested reason to resist. The
+microfoundation is the universalism-to-trust-to-legitimacy chain of Rothstein and Uslaner [Rothstein
+and Uslaner, 2005], applied at the margin of an inequality shock. The mechanism does not require
+civic virtue. It requires that the middle class has something at stake in the public sector. The
+discriminating implications: the gate should not exist where the welfare state is pension-heavy or
+means-tested, because the middle class is not enrolled; and the interaction should attenuate when
+spending composition, the share of public services in total social spending, and usage proxies are
+controlled.
+Credible pre-commitment. When inequality is high, voters anticipate that elites will respond
+to redistributive threats by limiting redistribution, and the median voter's demands go unmet; a
+populist who credibly promises redistribution can then win without being able to deliver it [Ace-
+moglu et al., 2013]. Universal, automatic welfare programs pre-commit redistribution in advance:
+the institutional structure delivers services as a matter of routine, so the redistributive promise is
+not the exclusive property of an insurgent. The gate blocks the populist-promise equilibrium at its
+source, by removing the unmet demand that makes the promise decisive. The discriminating impli-
+cation: the gate should be stronger where services are automatic, entitlement-based, indexed, and
+non-discretionary, and absent where generosity is discretionary and late-bought. The outcome-side
+literature has already documented the second half of this pattern, that incumbents under ero-
+sion expand targeted and chauvinist transfers while dismantling services [Szikra and Öktem, 2023,
+Lendvai-Bainton and Szelewa, 2021, Vanhuysse, 2006, Benczes and Orzechowska-Wacªawska, 2024,
+Ennser-Jedenastik, 2018]; the design tests whether that late-bought generosity substitutes for the
+gate, which the hypothesis says it does not.
+The three mechanisms share one implication that H5 states as a contrast: what gates is the
+universal service state, not welfare eort in general. Targeted cash transfers do not stabilize au-
+tomatically, because they are discretionary; they do not enroll the middle class, because they are
+means-tested; and they do not pre-commit, because an incumbent can redirect them at will. Pension-
+heavy spending enrolls the elderly, not the young and the employed, and it is the component that
+distinguishing politicians can expand while dismantling services. Late-bought generosity is worse
+than neutral: it buys quiescence while institutions are dismantled.
+3.3
+The co-evolution of inequality, education, and democracy
+The gate also explains a second set of facts: the co-evolution of inequality, education, and democratic
+quality in the post-1990 wave. Democratization has a robust eect on tax revenues and schooling
+but no robust average eect on inequality [Acemoglu et al., 2015]. The eld fact, stated precisely
+in Section 2, is that the inequality-reduction leg of the democratic dividend does not materialize on
+average. The gate account explains why: scal expansion reduces inequality only where universal
+service institutions are strong enough to convert resources into distributional change and to keep
+leakage low. In thin-welfare democratizers, higher taxation without service delivery produces nei-
+ther redistribution nor a middle-class constituency attached to public provision. The rst-decade
+dividend, or its absence, then connects democratization to its own fate: countries whose rst demo-
+cratic decade delivered a visible, universal dividend entered the crisis years with a welfare buer
+and a service constituency; countries where it did not entered them without either.
+Education operates through the same institutional channel. The macro evidence that education
+causes democratization is weak [Acemoglu et al., 2005], and the gate account agrees at the transition
+margin. At the resilience margin the channel is dierent: education builds democratic resilience
+when it is absorbed into middle-class employment and enrolled in public services, because both
+give the educated a stake in the existing order. Where education expands without absorption, the
+8
+
+========== PAGE 9 ==========
+Campante-Chor mismatch operates, schooling combined with poor economic opportunities produc-
+ing grievances and mobilization, transposed here from protest onset to graded erosion [Campante
+and Chor, 2012]. The redistributive politics of education [Ansell, 2010] and the cleavage structures
+documented by Gethin, Martinez-Toledano, and Piketty [Gethin et al., 2022] are the microfounda-
+tions of that channel. The hypothesis therefore predicts that education-without-absorption tightens
+the gate only where welfare is thin: the mismatch arm of the design.
+3.4
+Hypotheses
+The theory yields ve pre-registered hypotheses. Each is stated with its discriminating implication
+so that a conrming result can say which mechanism did the work, and a disconrming result can
+say which account survives.
+H1 (the gate). The within-country eect of a lagged market-inequality increase on the Liberal
+Democracy Index is negative and substantively large in thin-welfare countries and near zero or
+positive in strong-welfare countries; equivalently, the interaction of pre-sc inequality with pre-
+determined welfare strength is positive and signicant, under welfare-specic trend controls. The
+functional-form report pre-committed in Section 3.1 distinguishes a linear from a convex, threshold-
+like gate.
+H2 (sequencing).
+Market-inequality surges and public-services retrenchment lead liberal-
+democracy declines by three to ve years in thin-welfare countries, and no anticipatory service
+decline precedes erosion onset in high-welfare countries. The temporal order distinguishes the gate
+from the reverse-causal story in which erosion causes welfare decline [Szikra and Öktem, 2023].
+H3 (the welfare-dependent dividend). Democratization reduces the top-10 percent income
+share, producing an inequality-reduction dividend over the rst post-transition years, only in high-
+welfare-legacy countries; the size of that rst-decade dividend predicts 20102022 resilience.
+H4 (mechanisms). At least one discriminating mechanism result obtains: (a) the interaction
+attenuates toward zero once the market-minus-disposable gap and its interaction are controlled,
+supporting stabilization; (b) the interaction attenuates once spending composition and usage proxies
+are controlled, supporting constituency formation; (c) the interaction is stronger where services are
+automatic and absent for discretionary late-bought transfers, supporting pre-commitment; (d) the
+inequality-by-thin-welfare interaction raises V-Dem polarization, and education-without-absorption
+tightens the gate only where welfare is thin, consistent with the proximate-channel account in which
+universal institutions interrupt the polarization-to-erosion link that Rau and Stokes document [Rau
+and Stokes, 2025]. Arms (a) through (c) discriminate among the gate's own mechanisms; arm (d)
+is a mechanism report placed in the proximate channel that the rival account already occupies, and
+its failure would not falsify the gate.
+H5 (universalism contrast). The gate is produced by public services, health and education
+spending, not by total social spending, pension-heavy and transfer-dominated, and not by gen-
+erosity acquired later through targeted or chauvinist transfers [Szikra and Öktem, 2023, Lendvai-
+Bainton and Szelewa, 2021, Vanhuysse, 2006, Benczes and Orzechowska-Wacªawska, 2024, Ennser-
+Jedenastik, 2018]. Total social spending and late-bought transfers are placebo moderators: they do
+not gate.
+The corollary states the asymmetry precisely. Welfare institutions built in the rst democratic
+decade, before crises arrive, gate the inequality-erosion link. Welfare generosity purchased later by
+incumbents is not a substitute; it is part of the erosion playbook. Temporal priority of universal
+institution-building, not the level of welfare eort, is what protects.
+The cohort restriction to
+transitions beginning by 1998, the welfare window dened inside the rst democratic decade, and
+the exclusion of cases whose erosion began within the rst twelve years all operationalize the priority
+9
+
+========== PAGE 10 ==========
+claim, so that the pre-determined precedes the outcome it is used to explain.
+4
+Data and Measurement
+The design is restricted to public OWID panels [Our World in Data, 2025].
+OWID aggregates
+the underlying primary sources: V-Dem for regime and outcome measures [Lührmann et al., 2018,
+Coppedge et al., 2024], the World Bank's Poverty and Inequality Platform for Gini coecients,
+the World Inequality Database for top-income shares, WHO and World Bank EdStats for health
+and education spending, the ILO for labor-force indicators, and OECD for the placebo moderator.
+Every series is cited with its OWID grapher path in the data-availability table (Appendix A2), so
+any reader can reproduce the panel without proprietary data.
+4.1
+Sample
+The treated population is post-1990 democratizers with transitions beginning between 1989 and
+1998. Transition is dated from the OWID-hosted V-Dem Regimes of the World classication as the
+rst year of electoral or liberal democracy sustained for at least two consecutive years, cross-checked
+against the OWID-hosted Boix-Miller-Rosato binary regime series [Boix et al., 2013, Lührmann
+et al., 2018]. If the cross-check must draw on the underlying BMR data rather than the OWID-
+hosted series, that is the paper's single non-OWID input, disclosed here and in the registry. The
+cohort cap serves the pre-determination logic: for every retained case, the rst democratic decade
+ends before the 2008 crisis and before the 20102022 resilience window that H3's dividend must
+predict. The expected roster is 25 to 35 countries. The roster is xed deterministically by the dating
+rule, printed in the registry and in Appendix A1, and no case is added or dropped after estimation
+begins. Countries with erosion onset within the rst twelve years after transition are agged; the
+specication with them excluded is pre-committed under Design 6(e) because welfare measured
+after erosion onset is post-treatment by construction. For comparison, and for the adjudication
+specication, we also construct the full sample of democracies over 19902022, which approximates
+and extends the Rau-Stokes population, whose sample restriction runs over 19952020, to the young
+democratizers that fell below the democracy threshold [Rau and Stokes, 2025]. The panel runs 1985
+2023, leading the earliest transitions by four years to support event-study pre-trends.
+4.2
+Outcome
+The V-Dem Liberal Democracy Index (v2x_libdem, 01), hosted on OWID, is the outcome in levels
+and in ve-year dierences [Our World in Data, 2025, Coppedge et al., 2024]. A continuous index
+is essential for graded erosion: the hypothesis concerns how much democratic quality is lost inside
+formally democratic regimes, and the post-1990 wave contains many episodes of substantial decline
+that stop short of breakdown. For the event-study designs, erosion onset is dened as the rst
+year of a sustained three-year decline of at least 0.03 in the index, in line with the graded-decline
+approach of the measurement literature [Waldner and Lust, 2018]. Robustness to alternative onset
+codings is pre-committed.
+4.3
+The inequality treatment: pre-sc by construction
+The primary treatment is the WID pre-tax national-income top-10 percent income share, hosted on
+OWID. It is the theoretically preferred measure for the populism mechanism, since the fear of elite
+capture in Acemoglu, Egorov, and Sonin is a fear of the very rich [Acemoglu et al., 2013], and it
+10
+
+========== PAGE 11 ==========
+is the measure type, pre-tax WID shares, that Rau and Stokes use at the top end of their analysis
+[Rau and Stokes, 2025]. The secondary treatment is a market-income Gini, the WID pre-tax Gini
+or the PIP market-income Gini where available on OWID, with the source concept disclosed per
+country-year. The disposable-income Gini, in which the entanglement problem of Section 2 lives,
+is demoted to robustness: it appears in the specications only to document the contrast and to
+construct the gap.
+The gate's rst mechanism is measured directly. The market-minus-disposable Gini gap, git,
+is constructed wherever market and disposable series both exist, with concept tags recording the
+source combination (expected: WID pre-tax Gini minus PIP disposable Gini, and market-minus-
+disposable PIP where both exist). Interpolation behavior and per-series coverage ags are printed
+in the coverage matrix, because the gap is only as good as its two inputs and the design's core
+identication move cannot rest on silently imputed observations. The gap is entered as a covariate
+and as a moderator in the mechanism and robustness designs.
+The treatment is lagged by three years in the main specication, and distributed lags trace the
+one-to-six-year prole. The lag structure is xed before estimation; it implements the three-to-ve-
+year transmission window of H2 and separates the gate from the reverse-causal direction, in which
+erosion precedes the inequality surge.
+4.4
+The welfare measure and its windows
+The gate variable Wi is the sum of domestic general government health expenditure (percent of
+GDP, WHO series) and government education expenditure (percent of GDP, World Bank EdStats),
+both hosted on OWID. It is an intentionally non-cash, services measure: public health and public
+education are the components the broad middle class uses, the components automatic in delivery,
+and the components an eroding executive must capture to take control of daily life. It excludes
+pensions and targeted cash by construction.
+Wi is set to the average over the earliest available three-year window within years 0 to 8 after
+transition, and it is time-invariant thereafter. The actual calendar years of the window are doc-
+umented per country in Appendix A1, because the WHO health series begins near 2000, so early
+transitions' de facto measurement years are disclosed rather than assumed: a 1991 transition whose
+earliest available service data begin in 2000 is measured in years 9 to 11, agged, and retained.
+The set of early transitions aected by the WHO start date is listed in the coverage matrix. The
+sensitivity pair is pre-committed: W measured at years T+3 to T+7 and at years T+8 to T+12 is
+reported alongside the primary earliest-window measure, so any window drift is visible rather than
+hidden. No country's W is imputed.
+The pre-determination logic is the heart of the identication, and it now has three legs. First,
+W is xed before typical erosion onset: in the post-1990 cohort, erosion begins on average in the
+second decade after transition, and the cohort cap plus the early-erosion exclusion rule ensure the
+measurement window precedes onset in every retained case. Second, W precedes the 2008 crisis and
+the 20102022 resilience window for the entire cohort, so the dividend measure and the resilience
+outcome are temporally separated. Third, the welfare legacies are inherited rather than chosen:
+Eastern European democratizers walked into communist-era health and education systems of near-
+universal coverage, and Latin American and African democratizers into colonial-era public-service
+skeletons of varying depth. The variance in W is driven by the depth and maintenance of inherited
+systems through a chaotic rst decade, not by long-run welfare design chosen under democratic
+deliberation.
+11
+
+========== PAGE 12 ==========
+4.5
+Placebo moderators and mechanism variables
+The universalism contrast of H5 needs a full-sample placebo. The OECD's total social spending
+(percent of GDP) is pensions-heavy and transfer-dominated, and it is the natural contrast, but it
+exists only for OECD members, and most of the retained roster, including South Africa, Ukraine,
+Mongolia, Indonesia, and much of Latin America, would be excluded from an OECD-only placebo.
+The pre-committed primary placebo is therefore a full-sample transfer measure, the ILO World
+Social Protection Database or IMF Government Finance Statistics transfers, whichever OWID hosts
+for the roster; the OECD SOCX analysis is reported as a secondary subsample with its coverage
+limitation quantied. H5's conrmation does not depend on the OECD-only subsample carrying
+the claim.
+The mechanism variables implement Section 3.2. Stabilization is the gap. Constituency for-
+mation is probed with spending composition, the ratio of health-plus-education spending to total
+social spending, and with usage proxies, public secondary enrollment shares and the V-Dem public-
+services index, where OWID carries them. Pre-commitment is probed with an automaticity index
+constructed from entitlement, indexation, and non-discretionary funding features; its data avail-
+ability is agged in the coverage matrix, and if the index is unavailable for a substantial share of
+the roster, the pre-commitment arm is reported as a case-level supplement rather than a panel
+estimate. The proximate-channel arm uses the V-Dem political polarization index and the ILO
+educated-youth unemployment rate, the share of 1524-year-olds with completed education who are
+unemployed, both hosted on OWID where available.
+4.6
+Controls
+The core specications include log GDP per capita (World Bank, via OWID) and an EU-accession
+indicator, with country xed eects absorbing time-invariant regional dierences and region-specic
+trends added in the robustness cells. Commodity dependence, measured as natural-resource rents as
+a share of GDP, enters the exclusion robustness check. No control is post-treatment with respect to
+the gate: W is pre-determined by construction, and the treatment is lagged. EU accession is entered
+both as a level control and, in the trend-controlled specication, as a level plus trend, because the
+accession process is the most salient welfare-building force in the Eastern European cases and the
+trend form is the form of the threat.
+4.7
+The divergent trajectories of the cohort
+The phenomenon the design must explain is documented by the descriptive series that follow, with
+values from the development phase to be re-veried at every series URL in the coverage audit.
+Among the eleven cases with continuous data, liberal-democratic quality diverged sharply after
+2010. Hungary fell from 0.754 in 2005 to 0.335 in 2022. Poland fell from 0.827 in 2010 to 0.417 in
+2022. Estonia rose from 0.811 to 0.853 over 20102022, and Latvia, Lithuania, and Slovakia held
+their 2005 levels. Chile consolidated after 2000 and declined mildly after 2015; South Korea fell
+mid-decade and recovered, ending 2022 at 0.718. South Africa moved from 0.666 in 2010 to 0.610
+in 2022, and Bulgaria and Romania uctuated in an intermediate band. The same wave produced
+both the sharpest erosion and the most stable resilience in the same region.
+Two descriptive facts about inequality discipline the theorizing. First, the eroded countries were
+not, on the disposable-income Gini, the most unequal in the group. Hungary's Gini uctuated
+between 0.27 and 0.35 over 20052016, with a trough of 0.270 in 2009; Poland's fell from 0.38 in
+2004 to 0.31 in 2016. Second, the resilient countries did not have exceptionally low inequality:
+Estonia's Gini stayed between 0.31 and 0.35, Latvia's between 0.34 and 0.39 (PIP, via OWID).
+12
+
+========== PAGE 13 ==========
+The cross-sectional correlation between inequality levels and erosion is weak in exactly the way
+Haggard and Kaufman describe [Haggard and Kaufman, 2021]. That fact does not contradict the
+materialist account, because the Rau-Stokes eect is about movements, not levels, and operates
+through within-country variation over time [Rau and Stokes, 2025]. It does mean the theory must
+be stated in shocks: the gate conditions the transmission of inequality increases, not the standing
+level of inequality. Section 5 is built for that statement.
+The welfare numbers line up with the trajectories' institutional reading. On the development-
+phase measure, the sum of health and education spending as a share of GDP runs from 10.3 in
+Lithuania, 9.6 in Hungary, 9.5 in Estonia, 9.0 in Slovakia, 8.9 in Poland, 8.4 in Latvia, 7.5 in Chile,
+7.2 in South Africa, to 5.1 in South Korea; Bulgaria and Romania lack usable WHO health series in
+the early window on OWID (the coverage matrix reports the exact years). Hungary and Poland sit
+mid-pack on services and eroded at low inequality. If the gate claim is right in its strong form, their
+erosion must run through channels other than inequality, polarization and elite coalition formation
+rst among them [Haggard and Kaufman, 2021, Svolik, 2019]. The welfare-gate hypothesis claims
+only that the inequality channel is gated by institutions, not that inequality is the only erosion
+channel. Whether mid-range service spending suces to gate the inequality channel in Hungary
+and Poland, against the scal reality of pension-dominated welfare states in which the service
+component stagnated, is an open question that the interaction design, and only the interaction
+design, can answer. The marginal-eect reporting in Section 6 commits to reporting the inequality
+eect at welfare values that include the Hungarian and Polish cases, so the crucial cases are inside
+the support of the test.
+4.8
+Pre-determination and exogeneity probes
+The identifying assumption deserves statement in its strongest form, and the probes that would
+break it are pre-committed. Post-1990 transitions are quasi-exogenous in timing: they cluster in
+19891991 with the collapse of the Soviet bloc, in 19921994 with the Southern African and Central
+American settlements, and in the late 1990s with the remaining post-communist and Asian cases
+[Lührmann et al., 2018]. At the moment of transition, welfare legacies are inherited. The threat
+to the assumption is that the rst democratic decade itself selects welfare depth: governments that
+consolidated well also maintained services. The design confronts this threat with ve pre-committed
+probes.
+First, balancing regressions: W is regressed on rst-decade inequality changes and on scal-
+collapse indicators, ination and output collapse, to show that W is not itself a product of the
+inequality dynamics the gate is meant to condition. Second, an instrumented version of Design
+1: W is instrumented with legacy variables, communist-era schooling enrollment and colonial-era
+public-service coverage, with 2SLS estimates reported; the roster feasibility of each instrument is
+documented in the registry, and any shortfall is reported rather than papered over. Third, the
+within-Eastern-Europe estimate holds the communist legacy constant and varies only the depth of
+inherited health and education systems, where rst-decade maintenance was driven by scal collapse
+and stabilization programs rather than democratic politics. Fourth, the placebo moderator splits the
+measure: if the protective variable were really democratic-quality selection, the pension-heavy total-
+spending measure would gate as well, and H5 predicts it does not. Fifth, the early-erosion exclusion
+rule removes the cases for which W is post-treatment by construction. Each probe addresses a
+specic version of the selection story, and Section 6 states what each failure would mean.
+The coverage matrix closes the data section. Appendix A2 tabulates, for every roster country,
+every series, and every window: availability, rst and last observed year, observation count, interpo-
+lation ag, and the OWID grapher URL. The eective estimation sample for each of the six designs
+13
+
+========== PAGE 14 ==========
+is printed from the matrix before estimation. If listwise deletion drops an eective sample below
+25 countries, the minimum-detectable-eect analysis of Section 5.7 is recalibrated to the realized
+sample and reported, no imputation lls the gaps, and the conrmation criteria are interpreted at
+the realized power. The matrix is the answer to the coverage question a reviewer must ask of a
+25-to-35-country design: every cell is either present with a URL or absent with a reason.
+5
+Research Design
+All estimation is implemented in Python (linearmodels and statsmodels), with the staggered event
+studies estimated by Sun-Abraham via pyxest and by Callaway-Sant'Anna via the R implemen-
+tation through rpy2 or a documented manual implementation [Callaway and Sant'Anna, 2021, Sun
+and Abraham, 2021]. Standard errors are clustered at the country level; the interaction tests use
+wild cluster bootstrap inference, given the modest number of clusters. The full code and the con-
+structed panel are released with the registry deposit, so every number in the companion results
+paper is generated by the deposited code from the deposited data.
+5.1
+Design 1: the gate test
+The core specication is a two-way xed-eects regression with welfare-specic trends:
+LibDemit = αi + δt + β1mi,t−3 + β2 (mi,t−3 × Wi) + γ1Wit + γ2Wit2 + X′
+itθ + εit,
+where i indexes countries, t years, αi and δt are country and year xed eects, mi,t−3 is the lagged
+pre-sc inequality treatment, and Wi is the pre-determined welfare measure, absorbed by the country
+xed eects in its own right with the interaction identied. The welfare-specic trends Wit and Wit2
+are the identication change this registration makes relative to the designs reviewed in Section 2: any
+factor correlated with W and with democratic trajectories, EU accession, scal capacity, geopolitical
+alignment, is absorbed in the trend terms, and the gate is identied o deviations from welfare-
+specic trends. The gate hypothesis is β2 > 0, large enough that the marginal eect β1+β2W is near
+zero or positive in the high-welfare arm and strongly negative in the thin-welfare arm. We report
+the marginal eect at the 10th, 25th, 50th, 75th, and 90th percentiles of the welfare distribution,
+with wild cluster bootstrap condence intervals, and the linear and quadratic functional forms pre-
+committed in Section 3.1. Because two-way xed-eects estimators with dierential timing can
+be biased under heterogeneous eects, we also estimate the interacted specication on ve-year
+dierences of the outcome and report Goodman-Bacon decompositions where timing variation is
+involved [Goodman-Bacon, 2021].
+The critical control variant is the gap-controlled specication, which in the same equation adds
+gi,t−3 and gi,t−3×Wi. Its reading is xed in advance. If β2 collapses toward zero once the gap and its
+interaction are included, the gate is scal ltering: the interaction was the rst mechanism measured,
+and no behavioral residue exists. If β2 survives, a behavioral residue exists and is attributed to
+constituency formation and pre-commitment, which Designs 5 and 6 then discriminate further.
+5.2
+Design 2: the adjudication specication
+To make the reconciliation claim directly, we estimate the baseline inequality main eect without
+any interaction, on the full democracy sample and on the young-democracy sample, and then
+introduce the interaction. The protocol commits to reading the two specications jointly. A weak
+or insignicant main eect with a strong and signicant interaction is the pattern that reconciles
+Rau and Stokes with Haggard and Kaufman [Rau and Stokes, 2025, Haggard and Kaufman, 2021],
+14
+
+========== PAGE 15 ==========
+because it says the average eect hides institutional heterogeneity rather than being absent. A strong
+unconditional main eect that survives the interaction is instead evidence for the unconditional
+materialist account. A null everywhere is evidence for the purely coalitional account. The three-
+way reading is pre-committed before estimation, so the adjudication cannot be renegotiated after
+the results are in.
+5.3
+Design 3: erosion-onset event studies and sequencing
+We stack erosion onsets among post-1990 democratizers and estimate dynamic coecients relative
+to onset, separately for the high-welfare and thin-welfare arms dened by a median split of W.
+The estimators are Callaway-Sant'Anna and Sun-Abraham, chosen because onsets are staggered
+across the cohort and treatment eects are plausibly heterogeneous [Callaway and Sant'Anna, 2021,
+Sun and Abraham, 2021]; the Goodman-Bacon decomposition documents the composition of any
+two-way xed-eects benchmark [Goodman-Bacon, 2021]. Pre-trend tests are pre-committed and
+reported for both arms. The event-study coecients trace the Liberal Democracy Index, market
+inequality, and public-services spending in the eight years before and after onset. The conrmation
+pattern for H2: in the thin-welfare arm, inequality and service retrenchment rise before the index
+declines; in the high-welfare arm, no such pre-onset movement appears. The lead-lag structure is
+the primary defense against reverse causality. If erosion caused welfare decline, services would fall
+only after onset; the hypothesis requires service decline to lead erosion in the thin-welfare arm and
+to be absent in the high-welfare arm. This also separates the gate's direction from the outcome-
+side literature that documents welfare transformed under backsliding [Szikra and Öktem, 2023,
+Lendvai-Bainton and Szelewa, 2021, Vanhuysse, 2006, Benczes and Orzechowska-Wacªawska, 2024].
+5.4
+Design 4: the democratization event study and the dividend
+We align countries at the transition year T and estimate the dynamic path of the top-10 percent
+income share, public services, and education over the two decades after transition, separately by
+pre-determined welfare legacy, above or below the sample median. The dividend window is xed at
+years 0 to 7 after transition, so the dividend precedes the 2008 crisis and the 20102022 resilience
+window for every retained case. The conrmation pattern for H3: the top-10 percent share declines
+in years 0 to 7 only in high-welfare-legacy countries, and the size of that rst-decade decline predicts
+the 20102022 change in the Liberal Democracy Index, in a country-level regression that reports the
+dividend-resilience slope with its condence interval. This extends the democratic-dividend result
+[Acemoglu et al., 2015] by conditioning its inequality leg on welfare institutions and by connecting
+the dividend to subsequent resilience, with the dividend measured before the resilience outcome.
+5.5
+Design 5: mechanism arms
+(a) Stabilization: the gap-controlled variant of Design 1, whose reading is xed in Section 5.1.
+(b) Constituency formation: the interaction is re-estimated with spending composition, the health-
+plus-education share of total social spending, and usage proxies entered as additional moderators
+and controls; attenuation is the pattern that assigns work to the constituency channel. (c) Pre-
+commitment: the automaticity index is interacted with the treatment in the same design; the
+gate should be stronger where services are automatic. (d) Proximate channels: the inequality-by-
+thin-welfare interaction is estimated on the V-Dem polarization index, and a triple interaction of
+inequality, thin welfare, and educated-youth unemployment tests whether the gate tightens where
+education expands without absorption [Campante and Chor, 2012]. Arms (a) through (c) are the
+mechanism discrimination the theory requires; arm (d) is a mechanism report in the proximate
+15
+
+========== PAGE 16 ==========
+channel already occupied by the rival account, and it is interpreted with that status, as Section 3.4
+pre-commits.
+5.6
+Design 6: robustness
+Seven cells are pre-committed, and every one is reported, including the ones that fail. (a) Alternative
+treatments: the market-income Gini for the top-10 percent share, and the disposable Gini entered
+only to document the contrast that motivates the design. (b) Alternative welfare measures: health
+and education entered separately; the sum entered continuously and as an above/below-median
+split. (c) Population weights. (d) Exclusion of the commodity-boom countries, identied by natural-
+resource rents above a threshold. (e) The within-Eastern-Europe estimate, holding the communist
+legacy constant; the early-erosion exclusion, dropping or recoding cases with erosion onset within the
+rst twelve years; and the EU-accession trend control. (f) Wild cluster bootstrap condence intervals
+for the interaction and the marginal eects. (g) Placebo moderators: total social spending from
+the full-sample transfer measure, the ILO World Social Protection Database or IMF Government
+Finance Statistics series, and the OECD SOCX measure on its OECD subsample; plus a placebo
+interaction of W with a within-country variable unrelated to inequality, population age structure,
+which the gate account predicts is null. The placebo cells are the falsication of the H5 contrast:
+a gate reproduced by pensions or by targeted or chauvinist transfers disconrms the universalism
+claim.
+5.7
+Power, minimum detectable eects, and the registry
+Power for an interaction test in a panel of 25 to 35 countries with serially correlated outcomes
+is the binding constraint, and the criteria in Section 6 are calibrated to it. Before estimation, a
+simulation-based minimum-detectable-eect analysis is run on the actual panel structure: a two-
+way xed-eects DGP with the realized country roster, the realized W distribution, and the realized
+treatment moments, under serial correlation of the outcome at rho 0.7, 0.8, and 0.9 and eective
+N of 25, 30, and 35. The analysis reports the minimum detectable β2 and the minimum detectable
+marginal eect at the 10th percentile of W, at 80 percent power, and the report is deposited with
+the registry. Two consequences follow and are accepted in advance. The study is powered to detect
+a large conditional eect, which is what the theory predicts: the Section 3 sketch implies near-
+complete transmission where welfare is thin and near-zero transmission where it is thick. And the
+conrmation criteria are stated for eects of that size; a weak gate would go undetected, and the
+paper will say so rather than claim a null.
+The registry closes the design. The protocol, the roster, the coverage matrix, the MDES analysis,
+and the deposited code are timestamped at OSF before any estimation. The primary specication
+is Design 1 with the pre-sc treatment, the earliest-window W, and welfare-specic trends. The
+decision rule, xed in advance: the gate holds if the interaction is signicant at p < 0.05 and the
+marginal-eect pattern is conrmed in the primary specication and in at least ve of the seven
+robustness cells, with failures reported and interpreted. No specication is added after estimation;
+no specication is dropped; the deposited code generates every number in the companion paper.
+6
+Expected Results and Falsication Criteria
+The protocol commits ex ante to the following inference rules, so that the test can adjudicate
+between the accounts.
+16
+
+========== PAGE 17 ==========
+Conrmation of the welfare-gate hypothesis requires ve conditions. (a) A signicant posi-
+tive interaction between lagged pre-sc inequality and pre-determined welfare strength on liberal-
+democracy trajectories, under welfare-specic trend controls, with the within-country inequality
+eect near zero or positive in the high-welfare arm and strongly negative in the thin-welfare arm:
+the marginal eect at the 10th and 25th percentiles of W is negative with a condence interval
+excluding zero, and the marginal eect at the 90th percentile is not signicantly negative. The gate
+holds if this pattern appears in the primary specication and in at least ve of the seven robustness
+cells, with failures reported and interpreted. (b) Sequencing: market-inequality surges and public-
+service retrenchment lead liberal-democracy declines by three to ve years in thin-welfare countries,
+no anticipatory service decline precedes erosion onset in the high-welfare arm, and pre-trend tests
+pass in both arms. (c) The welfare-dependent dividend: the top-10 percent income share declines
+in years 0 to 7 after democratization only in high-welfare-legacy countries, and the size of that rst-
+decade decline predicts the 20102022 change in the Liberal Democracy Index. (d) At least one
+discriminating mechanism result from Design 5, with the readings xed in Section 5.1 and stated
+again here: the interaction collapses when the gap and its interaction are controlled, and stabi-
+lization is the mechanism; or the interaction attenuates with composition and usage controls, and
+constituency formation is the mechanism; or the interaction is concentrated in automatic programs
+and absent for discretionary late-bought transfers, and pre-commitment is the mechanism. (e) The
+universalism contrast: public services gate; the full-sample transfer placebo and the OECD total
+social spending measure do not, in their respective samples.
+Disconrmation is equally sharp, and each outcome has a clear interpretation in the literature.
+A homogeneous inequality eect across welfare arms, or an insignicant or wrong-signed interaction
+in the primary specication, falsies the gate and favors the unconditional materialist account
+[Rau and Stokes, 2025, Houle, 2009]. An interaction that collapses once welfare-specic trends are
+added falsies the gate in favor of a selection reading in which a third factor drives both welfare
+maintenance and democratic resilience. Reversed sequencing, with service decline following erosion
+onset, favors the outcome-side transformation literature [Szikra and Öktem, 2023, Lendvai-Bainton
+and Szelewa, 2021, Vanhuysse, 2006, Benczes and Orzechowska-Wacªawska, 2024] over the gate.
+A gate reproduced by the pension or targeted-cash placebo disconrms the universalism claim,
+H5, even if H1 holds. A dividend that appears in thin-welfare countries disconrms the welfare-
+dependent-dividend claim, H3. Every one of these outcomes adjudicates among the accounts, so
+the study is a genuine three-way test and a null result is itself a contribution: it would mean the
+unconditional materialist or the purely coalitional account survives the institutional test.
+Two interpretive commitments deserve emphasis because they are the ones a design can quietly
+reverse. First, the arithmetic-only reading is pre-committed. Under the arithmetic-only account,
+in which automatic stabilization lters inequality but institutions change no behavior, the gate
+interaction in the gap-controlled specication disappears completely, and the residual market eect
+is homogeneous in W. Under the behavioral account, a residual interaction survives. The results are
+read through that dichotomy, and the two mechanisms that survive the gap control, constituency
+formation and pre-commitment, are then assigned by the Design 5 attenuation patterns. Second,
+the marginal-eect reporting standard: the gate claim lives or dies on the inequality marginal
+eect at the welfare-distribution percentiles, not on the interaction coecient alone, because a
+signicant interaction with a negative marginal eect everywhere would not constitute a gate. The
+percentile plot and the Hungarian and Polish values inside the support are part of the report, not
+an afterthought.
+17
+
+========== PAGE 18 ==========
+7
+Discussion
+The welfare-gate hypothesis is oered as a resolution to a dispute that has been stuck because its
+two protagonists estimate dierent objects, and one of them measures its treatment through the
+very institutions the dispute is about. The value of the design lies in what each possible outcome
+would teach. We discuss three central readings before the data arrive.
+Reconciling the two accounts. If H1 and H2 hold, the Rau-Stokes inequality eect [Rau and
+Stokes, 2025] and the Haggard-Kaufman economic skepticism [Haggard and Kaufman, 2021] are not
+in tension. The inequality eect in the global sample is carried by the thin-welfare democracies:
+the post-communist laggards, the Latin American service skeletons, the Southern African cases
+where public services reach only part of the population. In the high-welfare arm, inequality rises
+without erosion, which is why close comparison of resilient cases nds no economic story. The case-
+based account studied mostly the backsliders, Hungary, Poland, Turkey, and the statistical account
+studied mostly the pooled average. Both were right about their eective samples and wrong about
+the population. The gate also disciplines the level-versus-shock distinction that the descriptive data
+force on us: Hungary and Poland eroded at low inequality, so the inequality channel cannot be their
+whole story; the gate claim is that where inequality shocks did occur, their transmission depended
+on institutions. That is a narrower claim than the materialist account makes, and the design is
+built to test exactly that claim.
+The pre-sc correction changes what a conrming result would mean for the materialist account
+itself. If the gate survives on the pre-tax top-10 percent share and on the market Gini, the inequality-
+erosion link is real but institutionally conditioned, which is the reconciliation. If the gate appears
+on the disposable Gini and dissolves on the pre-sc measures, the Rau-Stokes main eect is partly
+scal ltering after all: the disposable Gini fell in high-welfare countries partly because their scal
+systems compressed it, and the protective welfare state and the compressed treatment are the
+same object measured twice. The design's contrast specications are built so the results can say
+which reading holds.
+The democratic dividend, conditioned.
+The most consequential extension is to the
+democratic-dividend literature. Acemoglu, Naidu, Restrepo, and Robinson established that democ-
+ratization raises taxation and schooling, and found no robust average inequality reduction, with
+imprecise estimates and heterogeneity they could not fully explain [Acemoglu et al., 2015]. The
+welfare-gate account supplies a candidate conditioner: the inequality-reduction leg of the dividend
+materializes only where universal service institutions are strong enough to convert scal expansion
+into distributional change. In thin-welfare democratizers, higher taxation without service delivery
+produces neither redistribution nor a middle-class constituency attached to public provision. The
+rst-decade dividend, or its absence, is then the mechanism that connects democratization to its
+own fate: countries whose rst democratic decade did not deliver the visible, universal dividend en-
+tered the crisis years with no welfare buer and no service constituency, precisely the conguration
+that H1 predicts erodes under inequality pressure. If H3 and H4 hold, the dividend literature and
+the erosion literature are one literature: the dividend is the resilience mechanism, and its failure
+is the erosion mechanism. This also reframes the education-and-democracy null [Acemoglu et al.,
+2005]: education produces democratic resilience through absorption into middle-class employment
+and enrollment in public services, not through values socialization alone. Where education expands
+without absorption, the Campante-Chor mismatch [Campante and Chor, 2012] operates, and the
+educated young become an erosion resource rather than a democratic one. The cleavage-structure
+results of Gethin, Martinez-Toledano, and Piketty [Gethin et al., 2022] and the redistributive
+politics of education in Ansell [Ansell, 2010] are the microfoundations of that channel. We repeat
+the caution of Section 6: all of this is conditional on the design conrming, and the design is
+18
+
+========== PAGE 19 ==========
+registered precisely so that a reader can tell the dierence between a conrming and a disconrming
+pattern without trusting the authors' later description of what they intended.
+The universalism contrast and the policy reading. The sharpest claim in the paper is H5:
+total social spending and late-bought generosity do not gate. If H5 holds, the policy implication is
+not spend more on welfare but build universal service institutions early. For the post-1990 cohort
+and for any future democratization wave, the testable prescription is that the rst democratic
+decade is the window in which universal health and education systems must be constructed, because
+legitimacy and constituency are built by the institutions that exist when the rst crisis arrives.
+Welfare eort purchased later, targeted cash, chauvinist family allowances, functions as pacication
+[Vanhuysse, 2006] and as an instrument of the eroding incumbent [Szikra and Öktem, 2023, Lendvai-
+Bainton and Szelewa, 2021, Benczes and Orzechowska-Wacªawska, 2024]. The distinction between
+universal services and total social spending is the distinction between institutions that create their
+own defenders [Pierson, 1993, Soss and Schram, 2007, Rothstein and Uslaner, 2005, Korpi and
+Palme, 1998] and expenditures that buy quiescence.
+South Africa is the sharpest challenge to the gate's thin-welfare arm. It combines the cohort's
+highest inequality, a Gini near 0.65 at its 2005 peak and still 0.61 in 2010, with only modest
+liberal-democratic decline, from 0.666 in 2010 to 0.610 in 2022. A purely materialist account would
+predict more erosion; the gate account reads the pattern as delayed or partial transmission, with the
+state-capture scandals of the 2010s as the rst installment. The timing tests in Design 3 are what
+distinguish these readings, and the protocol commits to reporting South Africa's residual explicitly.
+8
+Limitations
+Five limitations are intrinsic to the design, and we state them as such rather than as future work.
+Small N and statistical power. The treated sample is 25 to 35 countries, and the interaction is
+a dierence-in-dierences of a dierence-in-dierences: the eective variation is the within-country
+association between inequality and liberal democracy, compared across welfare arms. Power for
+interaction tests is low in samples of this size, and the clustered standard errors rest on a modest
+number of clusters. The pre-committed MDES analysis denes what the design can detect before
+estimation, and the conrmation criteria are stated for the large conditional eects the theory
+predicts. The study will not detect a weak gate, and the results paper will say so if the condence
+intervals cannot exclude one.
+The welfare measure is a proxy. Public health and education spending as a share of GDP
+measures scal eort, not universality, not quality, and not usage by the middle class. Two countries
+with identical spending shares can dier in whether public hospitals serve the well-o or only the
+poor, and the mechanism in H1 is about usage. The proxy bias is conservative: measurement error
+in the gate variable attenuates the interaction and biases against conrmation. Composition and
+usage controls partially discipline the proxy, but the ideal test would require usage data that OWID
+panels do not fully carry, and the coverage matrix will say exactly how far the usage proxies reach.
+Identication of the gate. The welfare measure is pre-determined relative to erosion onset,
+but it is not randomly assigned. The rst democratic decade is itself a period of democratic politics,
+and governments that consolidated well also maintained services. The balancing regressions, the
+legacy-instrument 2SLS, the within-Eastern-Europe estimate, the placebo moderator, and the early-
+erosion exclusion each address a specic version of this threat, and the welfare-specic trends absorb
+the shared-trend version, but none eliminates the possibility that a third factor, state capacity,
+geography, or geopolitical alignment, drives both welfare maintenance and democratic resilience.
+EU accession is the most salient such factor for the Eastern European cases, and it was itself
+19
+
+========== PAGE 20 ==========
+a welfare-building force in the rst decade, which means the gate and the accession channel are
+partially entangled by construction. The time-invariant nature of the moderator means the cross-
+sectional weight in the interaction is correlational by design; the identication claims are about the
+within-country inequality dynamics that the trends and lags discipline.
+Measurement of the outcome and the treatment. The Liberal Democracy Index is expert-
+coded, and its inter-temporal comparability is contested [Waldner and Lust, 2018]. The Gini coe-
+cient's cross-country comparability is limited by diering underlying surveys and income concepts;
+PIP and WID harmonization, while the best available, does not remove the issue. Both biases are
+plausibly classical in this design, attenuating main eects and interactions alike, but the threat
+to the sequencing tests is asymmetric: if erosion onset is misdated, the lead-lag structure in De-
+sign 3 shifts, and the conrmation pattern for H2 could be manufactured by measurement timing.
+We address this with the three-year sustained-decline coding rule, robustness to alternative onset
+codings, and the requirement that the sequencing pattern dier across welfare arms, which a pure
+measurement artifact would not produce.
+The placebo subsample problem. The sharpest contrast, H5, requires a full-sample placebo,
+and the full-sample transfer measure is the pre-committed answer. The OECD SOCX measure
+exists only for OECD members, and an H5 test run only on that subsample could not carry the
+paper's strongest claim; the OECD-only analysis is reported as a secondary subsample with its
+coverage limitation quantied. If the ILO or IMF full-sample series proves unavailable on OWID
+for a substantial share of the roster, that nding is itself a registered limitation: the universalism
+contrast would then rely on the composition contrast within the health-plus-education measure,
+health versus education entered separately, and on the within-country contrast between discretionary
+and automatic spending, and the paper would say so.
+9
+Conclusion
+The post-1990 democratizers are the population on which the dispute about democratic erosion
+should be adjudicated, and they are the population the global statistical literature has excluded.
+This paper has argued that the adjudicating variable is the welfare state, specically the uni-
+versal service state built in the rst democratic decade, and that the eld's agship treatment,
+disposable-income inequality, is compressed by the very institutions the gate hypothesis implicates.
+The hypothesis is precise: market-inequality surges erode young democracies only where welfare
+institutions are too thin to absorb them, the scal lter is measured directly as the market-minus-
+disposable gap, and the inequality-reduction leg of the democratic dividend materializes only behind
+the gate. The design is xed: an OWID-only panel, a pre-determined welfare measure with docu-
+mented windows, a pre-sc treatment, welfare-specic trend controls, staggered event studies with
+estimators built for dierential timing, exogeneity probes, a xed roster with a coverage matrix,
+a power analysis, and a timestamped registry. The descriptive data show why the adjudication
+matters: the same wave produced both the sharpest erosion and the most stable resilience, and the
+eroded countries were not the most unequal. If the evidence conrms the gate, the reconciliation of
+the materialist and coalitional accounts is institutional: inequality matters, but its eect is condi-
+tional on institutions that half the post-1990 wave never built, and part of the materialist account's
+pooled eect is the scal ltering of its own treatment. If it disconrms, the unconditional accounts
+stand, and the adjudication is still progress. The results paper will report against the criteria xed
+here, and the registry entry will make the dierence between the two visible to any reader.
+20
+
+========== PAGE 21 ==========
+Appendix
+A1.
+Candidate roster and transition years. The roster is xed deterministically from the
+OWID-hosted V-Dem Regimes of the World series, cross-checked against Boix-Miller-Rosato, and
+is printed in full, country by country with transition year and dating source, in the registry and
+in the supplementary materials of the companion results paper. No case is added or dropped after
+estimation begins. An illustrative subset of eleven of those cases, Bulgaria, Chile, Estonia, Hungary,
+Latvia, Lithuania, Poland, Romania, Slovakia, South Africa, and South Korea, is listed here; the
+full roster is produced by the dating rule of Section 4.1, and its coverage appears in Appendix A2.
+A2. Data-availability and coverage matrix. Country by variable by window: availability,
+rst and last observed year, observation count, interpolation ag, OWID grapher URL.
+A3. Minimum-detectable-eect analysis. Simulation results on the realized panel under
+rho 0.7, 0.8, 0.9 and eective N 25, 30, 35.
+A4. Registry deposit checklist. Protocol text, roster, coverage matrix, MDES report, code,
+panel construction script, decision rules, dated OSF deposit.
+References
+Daron Acemoglu and James A. Robinson. Economic Origins of Dictatorship and Democracy. Cam-
+bridge University Press, Cambridge, 2006. doi: 10.1017/CBO9780511510809.
+Daron Acemoglu, Simon Johnson, James A. Robinson, and Pierre Yared. From education to democ-
+racy? American Economic Review, 95(2):4449, 2005. doi: 10.1257/000282805774669916.
+Daron Acemoglu, Georgy Egorov, and Konstantin Sonin.
+A political theory of populism.
+The
+Quarterly Journal of Economics, 128(2):771805, 2013. doi: 10.1093/qje/qjs077.
+Daron Acemoglu, Suresh Naidu, Pascual Restrepo, and James A. Robinson. Democracy, redistri-
+bution, and inequality. In Anthony B. Atkinson and Francois Bourguignon, editors, Handbook
+of Income Distribution, volume 2, chapter 22, pages 18851966. Elsevier, Amsterdam, 2015. doi:
+10.1016/B978-0-444-59429-7.00022-4.
+Ben W. Ansell. From the Ballot to the Blackboard: The Redistributive Political Economy of Educa-
+tion. Cambridge University Press, Cambridge, 2010. doi: 10.1017/CBO9780511730108.
+Ben W. Ansell and David J. Samuels. Inequality and Democratization: An Elite-Competition Ap-
+proach. Cambridge University Press, New York, 2014. doi: 10.1017/CBO9780511843686.
+István Benczes and Joanna Orzechowska-Wacªawska. Governing the economy under populist rule:
+The cases of hungary and poland.
+Problems of Post-Communism, 71(4):341355, 2024.
+doi:
+10.1080/10758216.2023.2301085.
+Nancy Bermeo. On democratic backsliding. Journal of Democracy, 27(1):519, 2016. doi: 10.1353/
+jod.2016.0012.
+Carles Boix. Democracy and Redistribution. Cambridge University Press, Cambridge, 2003. doi:
+10.1017/CBO9780511804960.
+Carles Boix, Michael Miller, and Sebastian Rosato. A complete data set of political regimes, 1800
+2007. Comparative Political Studies, 46(12):15231554, 2013. doi: 10.1177/0010414012463905.
+21
+
+========== PAGE 22 ==========
+Brantly Callaway and Pedro H. C. Sant'Anna. Dierence-in-dierences with multiple time periods.
+Journal of Econometrics, 225(2):200230, 2021. doi: 10.1016/j.jeconom.2020.12.001.
+Filipe R. Campante and Davin Chor. Why was the arab world poised for revolution? schooling,
+economic opportunities, and the arab spring. Journal of Economic Perspectives, 26(2):167188,
+2012. doi: 10.1257/jep.26.2.167.
+Michael Coppedge, John Gerring, Carl Henrik Knutsen, Staan I. Lindberg, Jan Teorell, Kyle L.
+Marquardt, Juraj Medzihorsky, Daniel Pemstein, Nazifa Alizada, Lisa Gastaldi, Garry Hindle,
+Johannes von Römer, and Steven L. Wilson. V-dem [country-year/country-date] dataset v14.
+Varieties of Democracy (V-Dem) Project, 2024. URL https://v-dem.net.
+Laurenz Ennser-Jedenastik. Welfare chauvinism in populist radical right platforms: The role of
+redistributive justice principles. Social Policy & Administration, 52(1):293314, 2018. doi: 10.
+1111/spol.12325.
+Gøsta Esping-Andersen.
+The Three Worlds of Welfare Capitalism.
+Princeton University Press,
+Princeton, NJ, 1990.
+Amory Gethin, Clara Martinez-Toledano, and Thomas Piketty. Brahmin left versus merchant right:
+Changing political cleavages in 21 western democracies, 19482020. The Quarterly Journal of
+Economics, 137(1):148, 2022. doi: 10.1093/qje/qjab036.
+Andrew Goodman-Bacon.
+Dierence-in-dierences with variation in treatment timing: History,
+theory, and application. Journal of Econometrics, 225(2):254277, 2021. doi: 10.1016/j.jeconom.
+2021.03.014.
+Jacob M. Grumbach. Laboratories of democratic backsliding. American Political Science Review,
+117(3):967984, 2023. doi: 10.1017/S0003055422000934.
+Stephan Haggard and Robert R. Kaufman. Inequality and regime change: Democratic transitions
+and the stability of democratic rule. American Political Science Review, 106(3):495516, 2012.
+doi: 10.1017/S0003055412000287.
+Stephan Haggard and Robert R. Kaufman. Dictators and Democrats: Masses, Elites, and Regime
+Change. Princeton University Press, Princeton, NJ, 2016.
+Stephan Haggard and Robert R. Kaufman. Backsliding: Democratic Regress in the Contemporary
+World. Cambridge University Press, Cambridge, 2021. doi: 10.1017/9781108957809.
+Christian Houle. Inequality and democracy: Why inequality harms consolidation but does not aect
+democratization. World Politics, 61(4):589622, 2009. doi: 10.1017/S0043887109990074.
+Evelyne Huber and John D. Stephens. Development and Crisis of the Welfare State: Parties and
+Policies in Global Markets. University of Chicago Press, Chicago, 2001. doi: 10.7208/chicago/
+9780226356495.001.0001.
+Evelyne Huber and John D. Stephens. Democracy and the Left: Social Policy and Inequality in Latin
+America. University of Chicago Press, Chicago, 2012. doi: 10.7208/chicago/9780226356556.001.
+0001.
+Walter Korpi and Joakim Palme. The paradox of redistribution and strategies of equality: Welfare
+state institutions, inequality, and poverty in the western countries. American Sociological Review,
+63(5):661687, 1998. doi: 10.2307/2657333.
+22
+
+========== PAGE 23 ==========
+Noémi Lendvai-Bainton and Dorota Szelewa. Governing new authoritarianism: Populism, nation-
+alism and radical welfare reforms in hungary and poland. Social Policy & Administration, 55(4):
+559572, 2021. doi: 10.1111/spol.12642.
+Steven Levitsky and Daniel Ziblatt. How Democracies Die. Crown, New York, 2018.
+Anna Lührmann. Disrupting the autocratization sequence: Towards democratic resilience. Democ-
+ratization, 28(5):10171039, 2021. doi: 10.1080/13510347.2021.1928080.
+Anna Lührmann and Staan I. Lindberg. A third wave of autocratization is here: What is new
+about it? Democratization, 26(7):10951113, 2019. doi: 10.1080/13510347.2019.1582029.
+Anna Lührmann, Marcus Tannenberg, and Staan I. Lindberg. Regimes of the world (row): Opening
+new avenues for the comparative study of political regimes. Politics and Governance, 6(1):6077,
+2018. doi: 10.17645/pag.v6i1.1214.
+Our World in Data. Our world in data, 2025. URL https://ourworldindata.org. Online database.
+Paul Pierson. When eect becomes cause: Policy feedback and political change. World Politics, 45
+(4):595628, 1993. doi: 10.2307/2950710.
+Eli G. Rau and Susan Stokes.
+Income inequality and the erosion of democracy in the twenty-
+rst century. Proceedings of the National Academy of Sciences, 122(1):e2422543121, 2025. doi:
+10.1073/pnas.2422543121.
+Bo Rothstein and Eric M. Uslaner. All for all: Equality, corruption, and social trust. World Politics,
+58(1):4172, 2005. doi: 10.1353/wp.2006.0022.
+Joe Soss and Sanford F. Schram. A public transformed? welfare reform as policy feedback. American
+Political Science Review, 101(1):111127, 2007. doi: 10.1017/S0003055407070049.
+Liyang Sun and Sarah Abraham. Estimating dynamic treatment eects in event studies with het-
+erogeneous treatment eects. Journal of Econometrics, 225(2):175199, 2021. doi: 10.1016/j.
+jeconom.2020.09.006.
+Milan W. Svolik. Which democracies will last? coups, incumbent takeovers, and the dynamic of
+democratic consolidation. British Journal of Political Science, 45(4):715738, 2015. doi: 10.1017/
+S0007123413000550.
+Milan W. Svolik. Polarization versus democracy. Journal of Democracy, 30(3):2032, 2019. doi:
+10.1353/jod.2019.0039.
+Dorottya Szikra and Kerem Gabriel Öktem. An illiberal welfare state emerging? welfare eorts
+and trajectories under democratic backsliding in hungary and turkey. Journal of European Social
+Policy, 33(2):201215, 2023. doi: 10.1177/09589287221141365.
+Pieter Vanhuysse.
+Divide and Pacify: Strategic Social Policies and Political Protests in Post-
+Communist Democracies. Central European University Press, Budapest, 2006.
+David Waldner and Ellen Lust.
+Unwelcome change:
+Coming to terms with democratic
+backsliding.
+Annual Review of Political Science,
+21(1):93113,
+2018.
+doi:
+10.1146/
+annurev-polisci-050517-114628.
+23
