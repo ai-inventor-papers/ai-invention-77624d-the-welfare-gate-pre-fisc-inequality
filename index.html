@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A pre-registered research design testing whether market-inequality surges erode post-1990 democratizers only where universal public health and education services are thin.">
+<title>The Welfare Gate: Pre-Fisc Inequality, Universal Public Services, and Democratic Resilience in Post-1990 Democratizers</title>
+<style>
+  :root {
+    --paper: #fbfaf6;
+    --raise: #ffffff;
+    --ink: #232220;
+    --ink-soft: #5d5a52;
+    --ink-mid: #3a3833;
+    --hairline: #e5e1d5;
+    --block: #f3f0e7;
+    --accent: #17604c;
+    --accent-deep: #11483a;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    --serif: Georgia, "Times New Roman", Cambria, "Noto Serif", serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
+  body {
+    margin: 0;
+    font: 17px/1.66 var(--sans);
+    color: var(--ink);
+    background: var(--paper);
+    overflow-x: clip;
+  }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 100;
+  }
+  .skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    background: var(--ink);
+    color: #fff;
+    padding: 0.65rem 1.1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+
+  .shell { max-width: 76rem; margin: 0 auto; padding: 0 1.25rem; }
+
+  /* ---- Layout: nav rail + content ---- */
+  .layout { display: grid; grid-template-columns: minmax(0, 1fr); }
+
+  .side-nav {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    background: rgba(251, 250, 246, 0.97);
+    border-bottom: 1px solid var(--hairline);
+    margin: 0 -1.25rem;
+    padding: 0 1.25rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .side-nav::-webkit-scrollbar { display: none; }
+  .side-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.35rem;
+    row-gap: 0.15rem;
+    margin: 0;
+    padding: 0.5rem 0;
+    list-style: none;
+  }
+  .side-nav a {
+    display: inline-block;
+    padding: 0.25rem 0.1rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+  }
+  .side-nav a:hover { color: var(--ink); }
+  .side-nav a[aria-current="true"] {
+    color: var(--accent-deep);
+    border-bottom-color: var(--accent);
+  }
+
+  .content { min-width: 0; }
+
+  /* ---- Hero ---- */
+  .hero {
+    padding: 3.4rem 0 2.6rem;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .kicker {
+    margin: 0 0 1.15rem;
+    font-size: 0.78rem;
+    font-weight: 650;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-deep);
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: clamp(2.05rem, 4.4vw, 3.2rem);
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    margin: 0 0 1.5rem;
+    max-width: 21em;
+  }
+  .lede {
+    max-width: 46rem;
+    margin: 0 0 2rem;
+    font-size: 1.09rem;
+    line-height: 1.62;
+    color: var(--ink-mid);
+  }
+  .lede .num { font-weight: 650; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .lede i { font-style: italic; }
+  .hero-links { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+  .btn {
+    display: inline-block;
+    padding: 0.68rem 1.25rem;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    color: var(--accent-deep);
+    font-weight: 630;
+    font-size: 0.95rem;
+    text-decoration: none;
+    background: transparent;
+  }
+  .btn:hover { background: #efeae0; }
+  .btn.primary { background: var(--accent-deep); border-color: var(--accent-deep); color: #fff; }
+  .btn.primary:hover { background: var(--accent); }
+
+  /* ---- Sections ---- */
+  main { }
+  section { padding: 2.9rem 0 0.4rem; scroll-margin-top: 4.75rem; }
+  h2 {
+    font-size: clamp(1.4rem, 2.3vw, 1.8rem);
+    font-weight: 680;
+    letter-spacing: -0.01em;
+    margin: 0 0 1.3rem;
+  }
+  h2 .idx {
+    font-family: var(--serif);
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.7em;
+    margin-right: 0.6rem;
+    font-variant-numeric: tabular-nums;
+  }
+  p { max-width: 43rem; margin: 0 0 1.15rem; }
+  .lead { color: var(--ink-mid); }
+  h3 { font-size: 1.05rem; font-weight: 690; margin: 2.1rem 0 0.7rem; }
+  .num { font-weight: 640; font-variant-numeric: tabular-nums; }
+  .src { color: var(--ink-soft); }
+
+  /* ---- Contribution cards ---- */
+  .cards {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.1rem;
+    margin: 1.5rem 0 0.6rem;
+  }
+  .card {
+    border: 1px solid var(--hairline);
+    border-radius: 6px;
+    background: var(--raise);
+    padding: 1.3rem 1.35rem 1.2rem;
+  }
+  .card h3 { margin: 0 0 0.45rem; font-size: 1.02rem; }
+  .card p { margin: 0; color: var(--ink-mid); font-size: 0.95rem; line-height: 1.58; max-width: none; }
+
+  /* ---- Equations ---- */
+  .eq {
+    background: var(--block);
+    border: 1px solid var(--hairline);
+    border-radius: 6px;
+    padding: 1.05rem 1.3rem;
+    margin: 0.3rem 0 1.3rem;
+    overflow-x: auto;
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    line-height: 1.9;
+  }
+  .eq .term { display: inline-block; text-align: center; margin: 0 0.7rem; vertical-align: middle; }
+  .eq .lbl {
+    display: block;
+    font-family: var(--sans);
+    font-size: 0.66rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--accent-deep);
+    margin-top: 0.25rem;
+    font-weight: 650;
+  }
+  .eq .op { margin: 0 0.35rem; }
+
+  /* ---- Lists: designs, hypotheses ---- */
+  ol.designs { margin: 0.4rem 0 1.2rem; padding-left: 1.35rem; max-width: 43rem; }
+  ol.designs li { margin-bottom: 0.8rem; }
+  ol.designs li strong { display: block; }
+  dl.hyps { margin: 0.4rem 0 1rem; max-width: 43rem; }
+  dl.hyps dt { font-weight: 700; margin-top: 0.9rem; }
+  dl.hyps dt .hno { color: var(--accent-deep); font-variant-numeric: tabular-nums; }
+  dl.hyps dd { margin: 0.2rem 0 0; }
+
+  ul.blocks { margin: 0.5rem 0 1.2rem; padding-left: 1.35rem; max-width: 43rem; }
+  ul.blocks li { margin-bottom: 0.85rem; }
+  ul.blocks li strong { font-weight: 650; }
+
+  /* ---- Tables ---- */
+  .table-wrap {
+    overflow-x: auto;
+    margin: 1.1rem 0 1.6rem;
+    border: 1px solid var(--hairline);
+    border-radius: 6px;
+    background: var(--raise);
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 0.94rem; min-width: 34rem; }
+  thead th {
+    text-align: left;
+    font-size: 0.72rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    font-weight: 650;
+    padding: 0.7rem 0.95rem;
+    border-bottom: 1px solid var(--hairline);
+    background: #f5f2e9;
+    white-space: nowrap;
+  }
+  tbody td {
+    padding: 0.68rem 0.95rem;
+    border-bottom: 1px solid var(--hairline);
+    vertical-align: top;
+  }
+  tbody tr:last-child td { border-bottom: 0; }
+  td.n, th.n { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  caption {
+    caption-side: bottom;
+    padding: 0.65rem 0.95rem 0.8rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    text-align: left;
+  }
+
+  /* ---- Limitations ---- */
+  .lim h3 .limno {
+    display: inline-block;
+    min-width: 1.7em;
+    color: var(--accent);
+    font-family: var(--serif);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- Footer ---- */
+  footer {
+    border-top: 1px solid var(--hairline);
+    margin-top: 3.6rem;
+    padding: 2.3rem 0 3.6rem;
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+  }
+  footer .cite { margin: 0 0 0.25rem; max-width: 46rem; }
+  footer .cite .title { font-style: italic; color: var(--ink-mid); }
+  footer .f-links { display: flex; flex-wrap: wrap; gap: 1.4rem; margin: 1.1rem 0 0; }
+  footer a { color: var(--accent-deep); }
+  footer .status { max-width: 46rem; margin-top: 1.1rem; }
+
+  /* ---- Tablet / desktop ---- */
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (min-width: 1024px) {
+    .layout { grid-template-columns: 13.5rem minmax(0, 1fr); column-gap: 3.25rem; }
+    .side-nav {
+      position: sticky;
+      top: 2.4rem;
+      align-self: start;
+      background: none;
+      border-bottom: 0;
+      margin: 0;
+      padding: 0.6rem 0 0;
+      overflow: visible;
+    }
+    .side-nav ul { flex-direction: column; gap: 0.12rem; white-space: normal; padding: 0; border-left: 1px solid var(--hairline); }
+    .side-nav li { margin: 0; }
+    .side-nav a {
+      display: block;
+      padding: 0.42rem 0.95rem;
+      border-bottom: 0;
+      border-left: 2px solid transparent;
+      margin-left: -1px;
+      font-size: 0.86rem;
+      letter-spacing: 0.02em;
+      text-transform: none;
+      font-weight: 570;
+    }
+    .side-nav a[aria-current="true"] { border-bottom: 0; border-left-color: var(--accent); }
+    section { scroll-margin-top: 1.5rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation: none !important;
+      transition: none !important;
+      scroll-behavior: auto !important;
+    }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="shell">
+  <div class="layout">
+
+    <nav class="side-nav" id="section-nav" aria-label="Page sections">
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#contributions">Contributions</a></li>
+        <li><a href="#method">Method</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#limitations">Limitations</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+
+      <header class="hero" id="overview">
+        <p class="kicker">Pre-registered research design &middot; no model estimated</p>
+        <h1>The Welfare Gate: Pre-Fisc Inequality, Universal Public Services, and Democratic Resilience in Post-1990 Democratizers</h1>
+        <p class="lede">
+          The democratic-erosion literature is split. One camp finds that income inequality is among the strongest
+          predictors of democratic decline in a global sample of uninterrupted democracies [1]. The other, reading the
+          post-1990 wave case by case, finds that economic grievances did not systematically separate backsliders from
+          survivors [2]. This paper argues the dispute is unfalsifiable as both sides run it: the statistical camp
+          tests no conditioning structure, and its flagship treatment, disposable-income inequality, is post-fisc,
+          compressed by exactly the welfare state the gate hypothesis implicates. The registered design corrects both
+          problems. Market-inequality surges, measured pre-fisc, erode the V-Dem Liberal Democracy Index
+          <span class="num">three to five years</span> later only where universal public health and education services
+          built in the first democratic decade are thin. The number that frames the test: the gate holds only if the
+          inequality-by-welfare interaction is significant at <i>p</i>&nbsp;&lt;&nbsp;0.05 in the primary specification
+          and in <span class="num">at least five of the seven</span> robustness cells. No model has been estimated.
+          The estimates do not exist yet; this page is the design.
+        </p>
+        <div class="hero-links">
+          <a class="btn primary" href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-77624d-the-welfare-gate-pre-fisc-inequality@main/paper.pdf" target="_blank" rel="noopener">Read the paper (PDF)</a>
+          <a class="btn" href="https://github.com/ai-inventor-papers/ai-invention-77624d-the-welfare-gate-pre-fisc-inequality" target="_blank" rel="noopener">Code and repository</a>
+        </div>
+      </header>
+
+      <main id="main">
+
+        <section id="contributions" aria-labelledby="contributions-h">
+          <h2 id="contributions-h"><span class="idx">01</span>Contributions</h2>
+          <p class="lead">Four claims, each registered before any estimation.</p>
+          <div class="cards">
+            <div class="card">
+              <h3>Reconciliation on institutional grounds</h3>
+              <p>Neither leading account tests the conditioning structure. This design identifies the condition under
+              which each holds: inequality erodes democracy where welfare institutions are thin, and the coalitional
+              story dominates where they are thick. One interaction test, not two literatures, adjudicates the dispute.</p>
+            </div>
+            <div class="card">
+              <h3>A treatment the institutions cannot compress</h3>
+              <p>Disposable-income inequality is post-fisc, and fiscal systems that compress it are larger where welfare
+              states are larger, so a gate estimated on the disposable Gini cannot separate institutional transmission
+              from arithmetic filtering. The treatment moves pre-fisc, to the WID pre-tax top-10 percent income share,
+              and the market-minus-disposable Gini gap is measured directly, turning the entanglement into a test of
+              the stabilization mechanism.</p>
+            </div>
+            <div class="card">
+              <h3>The democratic dividend, conditioned</h3>
+              <p>Democratization raises tax revenues and schooling but shows no robust average effect on inequality.
+              The design states the dividend on top-income shares over a fixed post-transition window, years 0 to 7,
+              and links its size to regime resilience in 2010&ndash;2022: the inequality-reduction leg materializes
+              only in high-welfare-legacy countries.</p>
+            </div>
+            <div class="card">
+              <h3>Identification and power fixed before the results</h3>
+              <p>The gate is identified off deviations from welfare-specific trends, with estimators built for
+              differential treatment timing, a fixed roster with a documented coverage matrix, exogeneity probes, and
+              a simulation-based minimum-detectable-effect analysis. The confirmation criteria are calibrated to the
+              power the sample can actually deliver.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="method" aria-labelledby="method-h">
+          <h2 id="method-h"><span class="idx">02</span>Method</h2>
+
+          <h3>The dispute neither side can resolve</h3>
+          <p>Rau and Stokes estimate a main effect: in a sample of democracies uninterrupted over 1995&ndash;2020, the
+          Gini coefficient is among the strongest predictors of erosion onset, with <span class="num">23 spells of
+          backsliding in 22 countries</span>. Haggard and Kaufman compare backsliders with survivors and conclude that
+          economic grievances did not do the separating; polarization and elite coalitional choices did. The
+          statistical account contains no welfare variables, so it cannot see whether its inequality coefficient is
+          carried by thin-welfare democracies. The case-based account never formalizes the interaction a conditional
+          claim requires. Both miss the same object, and the field's flagship treatment is entangled with it:
+          disposable income is post-fisc, and the fiscal systems that compress it are the welfare states this
+          hypothesis implicates.</p>
+
+          <h3>What goes in</h3>
+          <ul class="blocks">
+            <li><strong>Sample.</strong> Post-1990 democratizers with transitions beginning 1989&ndash;1998, an
+            expected roster of <span class="num">25 to 35 countries</span> over a panel running 1985&ndash;2023. The
+            cohort cap makes pre-determination possible: every retained case's first democratic decade ends before the
+            2008 crisis and before the 2010&ndash;2022 resilience window. Transition is dated from the V-Dem Regimes
+            of the World series and cross-checked against Boix-Miller-Rosato; the roster is fixed
+            deterministically, and no case is added or dropped after estimation begins.</li>
+            <li><strong>Treatment.</strong> The primary treatment is the World Inequality Database pre-tax
+            national-income top-10 percent income share, the measure type Rau and Stokes use at the top end of
+            their own analysis. It is lagged three years in the main specification, with distributed lags tracing
+            years one through six, implementing the three-to-five-year transmission window. The market-income Gini is
+            the secondary treatment; the disposable Gini, where the entanglement lives, enters only to construct the
+            gap.</li>
+            <li><strong>Gate.</strong> The welfare variable <i>W</i> is the sum of government health expenditure and
+            government education expenditure, both as a share of GDP, averaged over the earliest available three-year
+            window within years 0 to 8 after transition and held time-invariant. It is deliberately non-cash: health
+            and education are what the broad middle class uses, what is automatic in delivery, and what an eroding
+            executive must capture. Pensions and targeted cash are excluded by construction, and they become the
+            placebo moderators of H5.</li>
+            <li><strong>Outcome.</strong> The V-Dem Liberal Democracy Index, 0 to 1, in levels and in five-year
+            differences. A continuous index is essential: the hypothesis concerns graded erosion inside formally
+            democratic regimes. Erosion onset is coded as the first year of a sustained three-year decline of at
+            least <span class="num">0.03</span>.</li>
+          </ul>
+
+          <h3>The gate and its two paths</h3>
+          <p>A market shock reaches liberal-democratic quality through two terms, and the design measures them
+          separately. The first is arithmetic: the market-minus-disposable Gini gap absorbs part of any shock before
+          the distribution reaches citizens, and this works even if no citizen changes behavior. The second is
+          behavioral: the residue of the shock that does reach citizens, gated by constituency formation, by which a
+          middle class that uses public services holds a material stake in the institutions erosion would capture,
+          and by credible pre-commitment, by which universal automatic programs block the populist-promise
+          equilibrium.</p>
+          <div class="eq" aria-hidden="true">
+            <span class="term">d&#8201;LibDem / d&#8201;m = [ &part;LibDem/&part;d &middot; (1 &minus; &phi;(W)) ]
+            <span class="lbl">fiscal filtering</span></span>
+            <span class="op">+</span>
+            <span class="term">[ &part;LibDem/&part;m | d&#772; ]
+            <span class="lbl">behavioral transmission</span></span>
+          </div>
+          <p>A design that treats disposable inequality as the treatment and welfare as the moderator conflates the
+          two terms. This design treats the pre-fisc shock as the treatment and enters the gap directly, as a
+          covariate and as a moderator. If gap control drives the interaction to zero, automatic stabilization is the
+          entire mechanism. If the interaction survives, a behavioral residue exists, and Designs 5 and 6 exist to
+          attribute it.</p>
+
+          <h3>Estimating the gate</h3>
+          <p>The core specification, Design 1, is a two-way fixed-effects regression with welfare-specific trends:</p>
+          <div class="eq" aria-hidden="true">
+            LibDem<sub>it</sub> = &alpha;<sub>i</sub> + &delta;<sub>t</sub> + &beta;<sub>1</sub>&#8201;m<sub>i,t&minus;3</sub>
+            + &beta;<sub>2</sub>(m<sub>i,t&minus;3</sub> &times; W<sub>i</sub>)
+            + &gamma;<sub>1</sub>W<sub>i</sub>t + &gamma;<sub>2</sub>W<sub>i</sub>t<sup>2</sup>
+            + X&prime;<sub>it</sub>&theta; + &epsilon;<sub>it</sub>
+          </div>
+          <p>The interaction coefficient &beta;<sub>2</sub> is the gate. Hypothesis H1 is &beta;<sub>2</sub> &gt; 0,
+          with the marginal effect near zero or positive in the high-welfare arm and strongly negative in the
+          thin-welfare arm, reported at the 10th, 25th, 50th, 75th and 90th percentiles of the welfare distribution.
+          The welfare-specific trends are the identification change this registration makes: any factor correlated
+          with welfare strength and with democratic trajectories, EU accession, fiscal capacity, geopolitical
+          alignment, is absorbed in the trend terms, and the gate is identified off deviations from welfare-specific
+          trends. Because two-way fixed effects with differential timing can be biased under heterogeneous effects,
+          the interacted specification is also estimated on five-year differences of the outcome, with
+          Goodman-Bacon decompositions, Callaway-Sant'Anna and Sun-Abraham estimators in the event
+          studies, and wild cluster bootstrap inference for the interaction test.</p>
+
+          <h3>The six designs</h3>
+          <ol class="designs">
+            <li><strong>Design 1, the gate test.</strong> The two-way fixed-effects specification with welfare-specific
+            trends, plus the gap-controlled variant whose reading is fixed in advance.</li>
+            <li><strong>Design 2, the adjudication.</strong> The inequality main effect with and without the
+            interaction, on the full democracy sample and on the young-democracy sample. A weak main effect with a
+            strong interaction reconciles the two accounts. A surviving unconditional effect favors the materialist
+            account; a null everywhere favors the coalitional account.</li>
+            <li><strong>Design 3, sequencing.</strong> Erosion-onset event studies estimated separately in the
+            high-welfare and thin-welfare arms, with pre-trend tests. The lead-lag structure is the primary defense
+            against reverse causality: services must fall before the index in the thin-welfare arm, and not at all in
+            the high-welfare arm.</li>
+            <li><strong>Design 4, the dividend.</strong> A democratization event study aligned at transition, tracing
+            the top-10 percent share, services and education over two decades by welfare legacy. The dividend window
+            is fixed at years 0 to 7, so it precedes the 2008 crisis and the 2010&ndash;2022 resilience window for
+            every retained case.</li>
+            <li><strong>Design 5, mechanisms.</strong> Four arms: gap control for stabilization; composition and
+            usage controls for constituency formation; the automaticity index for pre-commitment; and a
+            proximate-channel report on polarization and educated-youth unemployment.</li>
+            <li><strong>Design 6, robustness.</strong> Seven pre-committed cells, every one reported including the
+            failures: alternative treatments, alternative welfare measures, population weights, commodity-boom
+            exclusion, within-Eastern-Europe estimates and the early-erosion exclusion, wild cluster bootstrap
+            inference, and the placebo moderators.</li>
+          </ol>
+
+          <h3>Why the design is shaped this way</h3>
+          <p>Everything hangs on one logical move: the pre-determined must precede the outcome it explains. Welfare
+          institutions built in the first democratic decade, before crises arrive, gate the inequality-erosion link;
+          welfare generosity purchased later by incumbents is not a substitute, it is part of the erosion playbook.
+          Five exogeneity probes confront the threat that the first democratic decade itself selects welfare depth:
+          balancing regressions of <i>W</i> on first-decade inequality changes and fiscal collapse; legacy-instrument
+          2SLS using communist-era schooling enrollment and colonial-era public-service coverage; the
+          within-Eastern-Europe estimate, which holds the communist legacy constant; the placebo moderator, which
+          predicts that a pension-heavy total-spending measure does not gate; and the early-erosion exclusion, which
+          removes cases for which <i>W</i> is post-treatment by construction.</p>
+          <p>The power analysis is calibrated to the same honesty. Minimum detectable effects are simulated on the
+          realized panel at <span class="num">80 percent power</span>, under outcome serial correlation of 0.7, 0.8
+          and 0.9 and effective N of 25, 30 and 35. The study is powered to detect a large conditional effect, which
+          is what the theory predicts. A weak gate will go undetected, and the results paper will say so rather than
+          claim a null.</p>
+
+          <h3>The five hypotheses</h3>
+          <dl class="hyps">
+            <dt><span class="hno">H1</span> &middot; The gate</dt>
+            <dd>The within-country effect of a lagged market-inequality increase on the Liberal Democracy Index is
+            negative and large in thin-welfare countries and near zero or positive in strong-welfare countries; the
+            interaction is positive and significant under welfare-specific trend controls.</dd>
+            <dt><span class="hno">H2</span> &middot; Sequencing</dt>
+            <dd>Market-inequality surges and public-services retrenchment lead liberal-democracy declines by three to
+            five years in thin-welfare countries, with no anticipatory service decline before erosion onset in
+            high-welfare countries.</dd>
+            <dt><span class="hno">H3</span> &middot; The welfare-dependent dividend</dt>
+            <dd>Democratization reduces the top-10 percent income share in the first post-transition years only in
+            high-welfare-legacy countries, and the size of that first-decade decline predicts 2010&ndash;2022
+            resilience.</dd>
+            <dt><span class="hno">H4</span> &middot; Mechanisms</dt>
+            <dd>At least one discriminating result: gap control kills the interaction (stabilization); composition and
+            usage controls attenuate it (constituency formation); automatic programs gate and discretionary transfers
+            do not (pre-commitment); or the interaction runs through polarization and tightens where education
+            expands without absorption.</dd>
+            <dt><span class="hno">H5</span> &middot; The universalism contrast</dt>
+            <dd>Public health and education services gate; total social spending, pension-heavy and
+            transfer-dominated, and late-bought targeted or chauvinist transfers are placebo moderators that do not
+            gate.</dd>
+          </dl>
+        </section>
+
+        <section id="results" aria-labelledby="results-h">
+          <h2 id="results-h"><span class="idx">03</span>Results</h2>
+          <p class="lead">The paper reports no estimates; none exist yet. What follows are the numbers the design is
+          built around, each as it appears in the paper: the calibration that frames the dispute, the trajectories
+          the design must explain, and the decision rules fixed before estimation.</p>
+
+          <h3>The calibration that frames the dispute</h3>
+          <p>Rau and Stokes calibrate their leading predictor against predicted annual erosion risk. Their sample:
+          23 spells of backsliding in 22 countries over 1995&ndash;2020, nine years on average, with main analyses
+          covering <span class="num">92 countries</span>.</p>
+          <div class="table-wrap">
+            <table>
+              <caption>Predicted annual risk of erosion onset by country, from Rau and Stokes 2025, as reported in
+              Section 2.1 of the paper.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Country</th>
+                  <th scope="col">Measured on</th>
+                  <th scope="col" class="n">Predicted annual risk</th>
+                  <th scope="col">Compared with</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sweden</td>
+                  <td>Gini of 26.4 in 2017</td>
+                  <td class="n">4 percent</td>
+                  <td>more equal than 87 percent of democracies</td>
+                </tr>
+                <tr>
+                  <td>United States</td>
+                  <td>Gini of 38.4</td>
+                  <td class="n">8.4 percent</td>
+                  <td>exceeds 60 percent of democracies</td>
+                </tr>
+                <tr>
+                  <td>South Africa</td>
+                  <td>most unequal democracy in the sample</td>
+                  <td class="n">31 percent</td>
+                  <td>&mdash;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>The democratic-dividend literature supplies the second calibration: democratization raises the tax-to-GDP
+          ratio by about <span class="num">16 percent</span> in the long run in the preferred specification, with no
+          robust average effect on inequality. The null is the field fact the gate explains.</p>
+
+          <h3>The trajectories the design must explain</h3>
+          <p>Among the eleven cases with continuous data, liberal-democratic quality diverged sharply after 2010.
+          The same wave produced both the sharpest erosion and the most stable resilience in the same region. Welfare
+          sums are the development-phase measure of <i>W</i>, health plus education spending as a share of GDP.</p>
+          <div class="table-wrap">
+            <table>
+              <caption>Liberal Democracy Index (0&ndash;1) and welfare sums by country, from Section 4.7 of the
+              paper. Values from the development phase, to be re-verified at every series URL in the coverage audit.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Country</th>
+                  <th scope="col">Liberal Democracy Index</th>
+                  <th scope="col" class="n">Welfare sum, % of GDP</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Hungary</td><td>0.754 in 2005 &rarr; 0.335 in 2022</td><td class="n">9.6</td></tr>
+                <tr><td>Poland</td><td>0.827 in 2010 &rarr; 0.417 in 2022</td><td class="n">8.9</td></tr>
+                <tr><td>Estonia</td><td>0.811 &rarr; 0.853, 2010&ndash;2022</td><td class="n">9.5</td></tr>
+                <tr><td>Slovakia</td><td>held its 2005 level</td><td class="n">9.0</td></tr>
+                <tr><td>Latvia</td><td>held its 2005 level</td><td class="n">8.4</td></tr>
+                <tr><td>Lithuania</td><td>held its 2005 level</td><td class="n">10.3</td></tr>
+                <tr><td>Chile</td><td>consolidated after 2000, declined mildly after 2015</td><td class="n">7.5</td></tr>
+                <tr><td>South Korea</td><td>fell mid-decade, recovered, ended 2022 at 0.718</td><td class="n">5.1</td></tr>
+                <tr><td>South Africa</td><td>0.666 in 2010 &rarr; 0.610 in 2022</td><td class="n">7.2</td></tr>
+                <tr><td>Bulgaria, Romania</td><td>fluctuated in an intermediate band; no usable WHO health series in the early window on OWID</td><td class="n">&mdash;</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>The inequality levels do not line up with the erosion outcomes. Hungary's disposable Gini ran between
+          0.27 and 0.35 over 2005&ndash;2016, with a trough of 0.270 in 2009; Poland's fell from 0.38 in 2004 to 0.31
+          in 2016. The resilient countries were not the most equal: Estonia's Gini held between 0.31 and 0.35,
+          Latvia's between 0.34 and 0.39. The level correlation is weak in exactly the way Haggard and Kaufman
+          describe, which is why the theory is stated in shocks rather than levels: the gate conditions the
+          transmission of inequality increases, not the standing level of inequality.</p>
+          <p>South Africa is the sharpest case: the cohort's highest inequality, a Gini near 0.65 at its 2005 peak
+          and still 0.61 in 2010, with only modest liberal-democratic decline, from 0.666 in 2010 to 0.610 in 2022.
+          The paper reads the pattern as delayed or partial transmission, and the Design 3 timing tests are what
+          distinguish that reading from a materialist one.</p>
+
+          <h3>Decision rules fixed ex ante</h3>
+          <div class="table-wrap">
+            <table>
+              <caption>Rules from Sections 5 and 6 of the paper. Every rule is fixed and deposited in a timestamped
+              OSF registry before estimation; no specification is added or dropped after.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Rule</th>
+                  <th scope="col">Committed value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Primary specification</td><td>Design 1 with the pre-fisc treatment, the earliest-window <i>W</i>, and welfare-specific trends</td></tr>
+                <tr><td>Significance rule</td><td>Interaction significant at <i>p</i> &lt; 0.05, with the marginal effect negative and excluding zero at the 10th and 25th percentiles of <i>W</i> and not significantly negative at the 90th percentile</td></tr>
+                <tr><td>Robustness rule</td><td>Pattern confirmed in the primary specification and in at least five of the seven robustness cells; failures reported and interpreted</td></tr>
+                <tr><td>Transmission window</td><td>Surges lead declines by three to five years; treatment lagged three years, distributed lags tracing years one through six</td></tr>
+                <tr><td>Power</td><td>Simulation-based MDES at 80 percent power, outcome serial correlation 0.7, 0.8 and 0.9, effective N 25, 30 and 35</td></tr>
+                <tr><td>Cohort and roster</td><td>Transitions beginning 1989&ndash;1998; expected roster 25 to 35 countries; panel 1985&ndash;2023</td></tr>
+                <tr><td>Dividend window</td><td>Years 0 to 7 after transition; the decline's size predicts the 2010&ndash;2022 change in the Liberal Democracy Index</td></tr>
+                <tr><td>Welfare windows</td><td>Primary: earliest available three-year window within years 0 to 8; sensitivity pairs T+3 to T+7 and T+8 to T+12</td></tr>
+                <tr><td>Erosion onset coding</td><td>First year of a sustained three-year decline of at least 0.03 in the index</td></tr>
+                <tr><td>Early-erosion exclusion</td><td>Cases with onset within the first twelve years are excluded pre-committed under Design 6(e)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="limitations" class="lim" aria-labelledby="limitations-h">
+          <h2 id="limitations-h"><span class="idx">04</span>Limitations</h2>
+          <p class="lead">Five limitations are intrinsic to the design, and the paper states them as such rather than
+          as future work (Section 8).</p>
+          <h3><span class="limno">1.</span>Small N and statistical power</h3>
+          <p>The treated sample is 25 to 35 countries, and the interaction is a difference-in-differences of a
+          difference-in-differences. Power for interaction tests is low in samples of this size, and the clustered
+          standard errors rest on a modest number of clusters. The pre-committed MDES analysis defines what the
+          design can detect before estimation; the study will not detect a weak gate, and the results paper will say
+          so if the confidence intervals cannot exclude one.</p>
+          <h3><span class="limno">2.</span>The welfare measure is a proxy</h3>
+          <p>Public health and education spending as a share of GDP measures fiscal effort, not universality, not
+          quality, and not usage by the middle class. Two countries with identical spending shares can differ in
+          whether public hospitals serve the well-off or only the poor. The proxy bias is conservative: measurement
+          error in the gate variable attenuates the interaction and biases against confirmation.</p>
+          <h3><span class="limno">3.</span>Identification of the gate</h3>
+          <p>The welfare measure is pre-determined relative to erosion onset, but it is not randomly assigned; the
+          first democratic decade is itself a period of democratic politics, and governments that consolidated well
+          also maintained services. The balancing regressions, legacy-instrument 2SLS, within-Eastern-Europe
+          estimate, placebo moderator and early-erosion exclusion each address a specific version of this threat, but
+          none eliminates a third factor, state capacity, geography or geopolitical alignment, that drives both
+          welfare maintenance and democratic resilience. EU accession was itself a welfare-building force, so the
+          gate and the accession channel are partially entangled by construction.</p>
+          <h3><span class="limno">4.</span>Measurement of the outcome and the treatment</h3>
+          <p>The Liberal Democracy Index is expert-coded, and its inter-temporal comparability is contested. Gini
+          comparability is limited by differing underlying surveys and income concepts; PIP and WID harmonization
+          does not remove the issue. The threat to the sequencing tests is asymmetric: a misdated erosion onset could
+          manufacture the confirmation pattern for H2. The three-year sustained-decline coding rule, alternative
+          onset codings, and the requirement that the sequencing pattern differ across welfare arms address it, and a
+          pure measurement artifact would not produce that difference.</p>
+          <h3><span class="limno">5.</span>The placebo subsample problem</h3>
+          <p>The sharpest contrast, H5, requires a full-sample placebo. The OECD SOCX measure exists only for OECD
+          members, so it runs as a secondary subsample with its coverage limitation quantified. If the ILO or IMF
+          full-sample transfer series proves unavailable on OWID for a substantial share of the roster, that finding
+          is itself a registered limitation, and the paper would say so.</p>
+        </section>
+
+      </main>
+
+      <footer>
+        <p class="cite"><span class="title">The Welfare Gate: Pre-Fisc Inequality, Universal Public Services, and
+        Democratic Resilience in Post-1990 Democratizers.</span> A pre-registered research design. Protocol, country
+        roster, coverage matrix, minimum-detectable-effect analysis and code are deposited in a timestamped OSF
+        registry before estimation; the registration ID and deposit date are fixed at the moment of deposit.</p>
+        <p class="cite">No model has been estimated as of this version. A companion paper will report estimates
+        against the criteria fixed in Section 6 of the paper.</p>
+        <div class="f-links">
+          <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-77624d-the-welfare-gate-pre-fisc-inequality@main/paper.pdf" target="_blank" rel="noopener">Paper (PDF)</a>
+          <a href="https://github.com/ai-inventor-papers/ai-invention-77624d-the-welfare-gate-pre-fisc-inequality" target="_blank" rel="noopener">Code repository</a>
+        </div>
+        <p class="status">All data are public Our World in Data (OWID) panels, with one disclosed non-OWID input,
+        the Boix-Miller-Rosato cross-check for transition dating. Every series is cited with its OWID
+        grapher path in the paper's coverage matrix, so the panel is reproducible without proprietary data.</p>
+      </footer>
+
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var ids = ["overview", "contributions", "method", "results", "limitations"];
+  var links = Array.prototype.slice.call(document.querySelectorAll('#section-nav a'));
+  var sections = ids.map(function (id) { return document.getElementById(id); });
+
+  function setActive(id) {
+    links.forEach(function (a) {
+      if (a.getAttribute("href") === "#" + id) {
+        a.setAttribute("aria-current", "true");
+        a.classList.add("is-active");
+      } else {
+        a.removeAttribute("aria-current");
+        a.classList.remove("is-active");
+      }
+    });
+  }
+
+  function currentFromScroll() {
+    var probe = window.innerHeight * 0.38;
+    var active = ids[0];
+    sections.forEach(function (sec, i) {
+      if (sec && sec.getBoundingClientRect().top <= probe) { active = ids[i]; }
+    });
+    setActive(active);
+  }
+
+  links.forEach(function (a) {
+    a.addEventListener("click", function () {
+      var id = a.getAttribute("href").slice(1);
+      if (ids.indexOf(id) !== -1) { setActive(id); }
+    });
+  });
+
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { setActive(entry.target.id); }
+      });
+    }, { rootMargin: "-35% 0px -58% 0px", threshold: 0 });
+    sections.forEach(function (sec) { if (sec) { io.observe(sec); } });
+  } else {
+    window.addEventListener("scroll", currentFromScroll, { passive: true });
+    currentFromScroll();
+  }
+})();
+</script>
+</body>
+</html>
